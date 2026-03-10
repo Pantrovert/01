@@ -1,67 +1,60 @@
-
 export const portfolioData = {
   owner: {
-    name: "Pantaleo Kapis",
-    role: "Software Engineer & Founder",
-    tagline: "Building intelligent systems for a sustainable digital future.",
+    name: "Pantaleo Kiruwa",
+    role: "Aerospace Engineer",
+    tagline: "Eager to contribute meaningfully to the Aeronautical sector as an Aircraft Maintenance Engineer.",
     location: "Dar es Salaam, Tanzania",
-    email: "pantaleo.kapis@outlook.com",
+    email: "pantaleo.kiruwa@example.com",
     github: "github.com/pantrovert",
     linkedin: "linkedin.com/in/pantaleo-k-a26306206",
   },
-  academicJourney: `Pantaleo earned his Bachelor of Science in Computer Science from St. Joseph University in Tanzania (SJUIT), graduating in 2022. His academic path was marked by a deep dive into Software Engineering and Artificial Intelligence, where he developed a passion for leveraging technology to solve local environmental and social challenges.`,
-  professionalJourney: `Pantaleo is the Founder and CEO of Zingira, a tech-driven waste management and recycling platform in Tanzania. Since 2022, he has been leading the development of digital solutions that promote a circular economy. Alongside his entrepreneurial ventures, he has maintained a robust freelance career as a Software Engineer, specializing in full-stack development and AI integration for scalable applications.`,
-  skills: `Technical Proficiencies: JavaScript/TypeScript (React, Next.js, Node.js), Python (Django, FastAPI), Flutter, Firebase, PostgreSQL, Docker. Domain Expertise: Circular Economy Tech, Machine Learning, UI/UX Design, Agile Project Management.`,
+  academicJourney: `Pantaleo is an aerospace engineering graduate from the International Institute of Aerospace Engineering and Management (IIAEM), Jain University. His academic career was driven by a fascination with space exploration and space sciences, providing him with a robust foundation in aeronautical principles, propulsion, and aircraft systems.`,
+  professionalJourney: `As a fresh graduate, Pantaleo is eager to transition into the professional aeronautical sector. He is specifically focused on becoming an Aircraft Maintenance Engineer (AME), where he can apply his technical knowledge to ensure the safety and efficiency of aviation systems. He is committed to making a significant impact through rigorous technical standards and a passion for excellence in the field.`,
+  skills: `Aeronautical Engineering, Aircraft Maintenance Principles, Space Sciences, Aerodynamics, Propulsion Systems, CAD/CAM, Aircraft Structures, Quality Control & Safety Standards.`,
   projects: `
-    - Zingira: A comprehensive waste management ecosystem including mobile and web platforms for tracking recycling and optimizing waste collection.
-    - AgriConnect: An AI-integrated farming assistant designed to help small-scale farmers identify crop diseases and access real-time market data.
-    - Portfolio V2: A high-performance personal portfolio built with Next.js 15, ShadCN UI, and Genkit for AI-driven interaction.
+    - Aerospace Design Analysis: Conducted in-depth research on aircraft structural integrity and performance optimization during his studies at IIAEM.
+    - Space Science Exploration: Participated in projects exploring the frontiers of space exploration and its future impact on global communication and research.
+    - Technical Systems Maintenance: Hands-on academic projects involving the teardown and analysis of propulsion systems and aircraft mechanical components.
   `,
-  interests: `Beyond coding, Pantaleo is committed to research in AI and Sustainability. He actively participates in the Tanzanian tech community, advocating for open-source development and mentoring junior engineers. He enjoys exploring the intersection of technology and environmental conservation.`,
+  interests: `Beyond his professional goals, Pantaleo is deeply passionate about space exploration and the evolving landscape of space sciences. He enjoys staying updated on the latest advancements in aerospace technology and is committed to lifelong learning in the aeronautical field.`,
   educationList: [
     {
-      degree: "B.Sc. in Computer Science",
-      institution: "St. Joseph University in Tanzania (SJUIT)",
-      period: "2019 - 2022",
-      achievements: "Graduated with honors. Developed an award-winning prototype for waste management. Active member of the university's Innovation Hub."
+      degree: "Aerospace Engineering Graduate",
+      institution: "International Institute of Aerospace Engineering and Management (IIAEM), Jain University",
+      period: "Completed 2024",
+      achievements: "Specialized in Aerospace engineering with a focus on space sciences and aircraft systems. Actively participated in technical workshops and aerospace research projects."
     }
   ],
   experienceList: [
     {
-      role: "Founder & CEO",
-      company: "Zingira",
-      period: "Nov 2022 - Present",
-      description: "Spearheading a tech-driven approach to waste management in East Africa. Architected the platform's core infrastructure and led cross-functional teams to launch the first iteration of the recycling app."
+      role: "Aspiring Aircraft Maintenance Engineer",
+      company: "Aeronautical Sector",
+      period: "Present",
+      description: "Preparing for professional certification and entry-level roles within the aircraft maintenance field. Developing a deep understanding of maintenance manuals, safety protocols, and aircraft inspection techniques."
     },
     {
-      role: "Software Engineer",
-      company: "Freelance",
-      period: "2020 - Present",
-      description: "Delivering bespoke web and mobile solutions for local and international clients. Expert in building responsive UIs and robust backend services using modern JavaScript and Python frameworks."
-    },
-    {
-      role: "Lead Developer (Internship)",
-      company: "Tech Startups (Regional)",
-      period: "2021 - 2022",
-      description: "Contributed to various projects focusing on fintech and logistics. Optimized database queries and improved frontend load times for several client-facing dashboards."
+      role: "Aerospace Engineering Intern",
+      company: "Academic & Research Projects",
+      period: "2022 - 2024",
+      description: "Contributed to various research-based projects at IIAEM, focusing on aerodynamic simulations and structural analysis for small-scale aircraft models."
     }
   ],
   skillCategories: [
     {
-      name: "Frontend Development",
-      skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Flutter"]
+      name: "Aerospace Core",
+      skills: ["Aerodynamics", "Propulsion", "Flight Mechanics", "Space Sciences"]
     },
     {
-      name: "Backend & Cloud",
-      skills: ["Node.js", "Django", "FastAPI", "Firebase", "PostgreSQL", "AWS"]
+      name: "Maintenance & Systems",
+      skills: ["AME Principles", "Aircraft Structures", "Systems Analysis", "Quality Control"]
     },
     {
-      name: "Artificial Intelligence",
-      skills: ["TensorFlow", "PyTorch", "Natural Language Processing", "GenAI"]
+      name: "Design & Tools",
+      skills: ["CAD/CAM", "MATLAB", "Technical Documentation", "Problem Solving"]
     },
     {
-      name: "Strategy & Impact",
-      skills: ["Circular Economy", "Founder Strategy", "Product Design", "Agile"]
+      name: "Professional Focus",
+      skills: ["Aviation Safety", "Aeronautical Regulations", "Impact-Driven Engineering"]
     }
   ]
 };

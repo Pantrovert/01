@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -41,7 +40,7 @@ export function Navbar() {
             <Rocket className="w-6 h-6" />
           </div>
           <span className="font-headline font-bold text-xl tracking-tight text-primary">
-            JourneyLens
+            Pantaleo Kiruwa
           </span>
         </a>
 
@@ -57,7 +56,7 @@ export function Navbar() {
             </a>
           ))}
           <Button className="bg-primary hover:bg-primary/90 rounded-full" asChild>
-            <a href="#ama">Ask Me Anything</a>
+            <a href="#ama">Ask AI Assistant</a>
           </Button>
         </div>
 
@@ -86,7 +85,7 @@ export function Navbar() {
             ))}
             <Button className="w-full bg-primary rounded-xl" asChild>
               <a href="#ama" onClick={() => setIsMobileMenuOpen(false)}>
-                Ask Me Anything
+                Ask AI Assistant
               </a>
             </Button>
           </div>

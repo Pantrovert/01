@@ -1,10 +1,9 @@
-
 import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Pantaleo Kapis | Software Engineer & ML Researcher',
-  description: 'The professional portfolio of Pantaleo Kapis (Pantrovert), showcasing expertise in Software Engineering, Machine Learning, and impactful digital solutions.',
+  title: 'Pantaleo Kiruwa | Aerospace Engineer & AME Aspiring',
+  description: 'The professional portfolio of Pantaleo Kiruwa, an aerospace engineering graduate from Jain University, passionate about space sciences and aircraft maintenance.',
 };
 
 export default function RootLayout({

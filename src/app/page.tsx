@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import { Navbar } from "@/components/navbar";
 import { AmaChat } from "@/components/ama-chat";
@@ -41,18 +40,18 @@ export default function Home() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
                 </span>
-                Solving Real-World Problems
+                Aerospace & Aeronautical Excellence
               </div>
               <h1 className="text-5xl lg:text-7xl font-headline font-bold leading-tight text-primary">
-                Engineering <span className="text-accent underline decoration-accent/30 underline-offset-8">Intelligence</span> for the Digital Age.
+                Advancing the <span className="text-accent underline decoration-accent/30 underline-offset-8">Frontiers</span> of Flight.
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-xl font-body">
-                I&apos;m {portfolioData.owner.name}, a {portfolioData.owner.role} dedicated to building high-impact software and exploring the frontiers of AI.
+                Hi, I&apos;m {portfolioData.owner.name}. An aerospace engineering graduate from the International Institute of Aerospace Engineering and Management, Jain University, passionate about space exploration, and space sciences in general, and eager to work in the Aeronautical sector as an Aircraft Maintenance Engineer, contribute meaningfully, and make a significant impact in the field.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <Button className="bg-primary hover:bg-primary/90 px-8 py-6 text-lg rounded-2xl group" asChild>
                   <a href="#projects">
-                    View Portfolio
+                    Explore My Journey
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </Button>
@@ -75,7 +74,7 @@ export default function Home() {
               <div className="relative rounded-[2rem] overflow-hidden border-8 border-background shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
                 <Image
                   src={profilePic?.imageUrl || "https://picsum.photos/seed/pantaleo/600/600"}
-                  alt="Pantaleo Kapis Profile"
+                  alt="Pantaleo Kiruwa Profile"
                   width={600}
                   height={600}
                   className="object-cover w-full h-full"
@@ -99,7 +98,7 @@ export default function Home() {
               <h2 className="text-4xl font-headline font-bold text-primary">Professional Trajectory</h2>
             </div>
             <p className="text-muted-foreground max-w-md">
-              A chronological view of my roles, responsibilities, and significant contributions to software engineering and research.
+              A chronological view of my roles, academic research, and career aspirations in the aerospace sector.
             </p>
           </div>
 
@@ -164,14 +163,14 @@ export default function Home() {
             <div className="lg:col-span-1">
               <div className="flex items-center gap-2 text-accent font-bold mb-4 uppercase tracking-widest text-xs">
                 <Code2 className="w-4 h-4" />
-                Tools of the Trade
+                Technical Expertise
               </div>
               <h2 className="text-4xl font-headline font-bold mb-6">Skills & Competencies</h2>
               <p className="text-primary-foreground/70 text-lg leading-relaxed mb-8">
-                I continuously evolve my technical stack to leverage AI and modern web frameworks, focusing on tools that enable scalable and intelligent applications.
+                I specialize in aerospace principles and aeronatutical maintenance, leveraging academic rigor to solve complex engineering challenges.
               </p>
               <Button variant="secondary" className="rounded-xl group">
-                Explore Tech Stack <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                Explore Skills <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
             <div className="lg:col-span-2 grid sm:grid-cols-2 gap-6">
@@ -199,28 +198,22 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-2 text-accent font-bold mb-2 uppercase tracking-widest text-xs">
                 <FolderKanban className="w-4 h-4" />
-                Latest Works
+                Academic & Research Projects
               </div>
-              <h2 className="text-4xl font-headline font-bold text-primary">Project Portfolio</h2>
-            </div>
-            <div className="flex gap-2">
-              <Badge className="bg-primary text-primary-foreground px-4 py-2 rounded-full cursor-pointer">All</Badge>
-              <Badge variant="outline" className="px-4 py-2 rounded-full cursor-pointer hover:bg-muted">AI/ML</Badge>
-              <Badge variant="outline" className="px-4 py-2 rounded-full cursor-pointer hover:bg-muted">Web</Badge>
-              <Badge variant="outline" className="px-4 py-2 rounded-full cursor-pointer hover:bg-muted">Sustainability</Badge>
+              <h2 className="text-4xl font-headline font-bold text-primary">Aerospace Focus</h2>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-10">
             {["project-1", "project-2", "project-3", "project-4"].map((id, idx) => {
               const projectImg = PlaceHolderImages.find(img => img.id === id);
-              const names = ["Zingira Recycle", "AgriConnect AI", "Medi-Check", "FinSmart Engine"];
-              const tags = [["Next.js", "Firebase", "Python"], ["PyTorch", "React Native", "Flask"], ["Django", "PostgreSQL", "React"], ["FastAPI", "TensorFlow", "D3.js"]];
+              const names = ["Aerospace Design Analysis", "Space Science Exploration", "Propulsion Systems Teardown", "Aeronautical Standards Compliance"];
+              const tags = [["Structural Analysis", "IIAEM"], ["Space Sciences", "Research"], ["Maintenance", "Hands-on"], ["Compliance", "Aviation Safety"]];
               const descriptions = [
-                "A waste management and recycling optimization platform for urban cities.",
-                "AI-powered farming assistant for crop disease detection and market pricing.",
-                "A comprehensive healthcare records and diagnostic management system.",
-                "A smart financial forecasting engine with automated transaction categorization."
+                "Research on aircraft structural integrity and performance optimization conducted during studies at Jain University.",
+                "Exploration of space science advancements and their future impact on global communication.",
+                "Detailed technical teardown and analysis of mechanical systems in aerospace propulsion.",
+                "Analysis of international aviation standards and rigorous maintenance compliance protocols."
               ];
               
               return (
@@ -268,9 +261,9 @@ export default function Home() {
             <div className="grid lg:grid-cols-2">
               <div className="p-12 lg:p-16 bg-primary text-primary-foreground flex flex-col justify-between">
                 <div>
-                  <h2 className="text-4xl font-headline font-bold mb-6 leading-tight">Let&apos;s build the <span className="text-accent italic">future</span> together.</h2>
+                  <h2 className="text-4xl font-headline font-bold mb-6 leading-tight">Let&apos;s build the <span className="text-accent italic">future</span> of aviation.</h2>
                   <p className="text-primary-foreground/70 text-lg mb-10">
-                    Always open to discussing innovative projects, AI research collaborations, or technical opportunities that challenge the status quo.
+                    Always open to discussing aerospace innovations, maintenance collaborations, or technical opportunities in the aeronautical sector.
                   </p>
                   
                   <div className="space-y-6">
@@ -306,20 +299,20 @@ export default function Home() {
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Full Name</label>
-                      <Input placeholder="John Doe" className="h-12 border-muted bg-muted/20 rounded-xl" />
+                      <Input placeholder="Your Name" className="h-12 border-muted bg-muted/20 rounded-xl" />
                     </div>
                     <div className="space-y-2">
                       <label className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Email Address</label>
-                      <Input placeholder="john@example.com" className="h-12 border-muted bg-muted/20 rounded-xl" />
+                      <Input placeholder="your@email.com" className="h-12 border-muted bg-muted/20 rounded-xl" />
                     </div>
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Subject</label>
-                    <Input placeholder="Collaboration Inquiry" className="h-12 border-muted bg-muted/20 rounded-xl" />
+                    <Input placeholder="Aerospace Collaboration" className="h-12 border-muted bg-muted/20 rounded-xl" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Message</label>
-                    <Textarea placeholder="How can we work together?" className="min-h-[150px] border-muted bg-muted/20 rounded-2xl resize-none" />
+                    <Textarea placeholder="How can we work together in the aeronautical sector?" className="min-h-[150px] border-muted bg-muted/20 rounded-2xl resize-none" />
                   </div>
                   <Button className="w-full h-14 bg-primary hover:bg-primary/90 text-lg rounded-2xl group shadow-lg shadow-primary/20">
                     Send Message
@@ -339,14 +332,14 @@ export default function Home() {
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-primary-foreground">
               <Rocket className="w-4 h-4" />
             </div>
-            <span className="font-headline font-bold tracking-tight text-primary">JourneyLens</span>
+            <span className="font-headline font-bold tracking-tight text-primary">Pantaleo Kiruwa</span>
           </div>
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} {portfolioData.owner.name}. All rights reserved.
           </p>
           <div className="flex items-center gap-8 text-sm font-medium text-muted-foreground">
             <a href="#" className="hover:text-primary">Home</a>
-            <a href="#projects" className="hover:text-primary">Work</a>
+            <a href="#projects" className="hover:text-primary">Experience</a>
             <a href="#ama" className="hover:text-primary">AI Chat</a>
           </div>
         </div>
