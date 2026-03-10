@@ -3,8 +3,8 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'JourneyLens Portfolio | Professional Journey of Alex Chen',
-  description: 'Showcasing the professional and academic journey of Alex Chen, featuring an interactive AI-powered chat.',
+  title: 'Pantaleo Kapis | Software Engineer & ML Researcher',
+  description: 'The professional portfolio of Pantaleo Kapis (Pantrovert), showcasing expertise in Software Engineering, Machine Learning, and impactful digital solutions.',
 };
 
 export default function RootLayout({

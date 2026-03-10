@@ -3,33 +3,33 @@
   "placeholderImages": [
     {
       "id": "profile-pic",
-      "description": "Professional headshot of the portfolio owner",
-      "imageUrl": "https://picsum.photos/seed/profile/400/400",
+      "description": "Professional headshot of Pantaleo Kapis",
+      "imageUrl": "https://picsum.photos/seed/pantaleo/400/400",
       "imageHint": "professional headshot"
     },
     {
       "id": "project-1",
-      "description": "Screenshot of JourneyLens project",
-      "imageUrl": "https://picsum.photos/seed/project1/800/600",
-      "imageHint": "tech project screenshot"
+      "description": "Zingira Waste Management App",
+      "imageUrl": "https://picsum.photos/seed/zingira/800/600",
+      "imageHint": "recycling app dashboard"
     },
     {
       "id": "project-2",
-      "description": "Screenshot of EcoTracker project",
-      "imageUrl": "https://picsum.photos/seed/project2/800/600",
-      "imageHint": "sustainability app"
+      "description": "AgriConnect AI Farming Tool",
+      "imageUrl": "https://picsum.photos/seed/agriconnect/800/600",
+      "imageHint": "agriculture data visualization"
     },
     {
       "id": "project-3",
-      "description": "Screenshot of HealthSync project",
-      "imageUrl": "https://picsum.photos/seed/project3/800/600",
-      "imageHint": "medical dashboard"
+      "description": "Medi-Check Healthcare System",
+      "imageUrl": "https://picsum.photos/seed/medicheck/800/600",
+      "imageHint": "medical interface"
     },
     {
       "id": "project-4",
-      "description": "Screenshot of Finlytics project",
-      "imageUrl": "https://picsum.photos/seed/project4/800/600",
-      "imageHint": "financial data visualization"
+      "description": "FinSmart Financial Engine",
+      "imageUrl": "https://picsum.photos/seed/finsmart/800/600",
+      "imageHint": "financial metrics"
     }
   ]
 }

@@ -41,13 +41,13 @@ export default function Home() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
                 </span>
-                Available for Innovation
+                Solving Real-World Problems
               </div>
               <h1 className="text-5xl lg:text-7xl font-headline font-bold leading-tight text-primary">
-                Crafting Digital <span className="text-accent underline decoration-accent/30 underline-offset-8">Excellence</span> through Code.
+                Engineering <span className="text-accent underline decoration-accent/30 underline-offset-8">Intelligence</span> for the Digital Age.
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-xl font-body">
-                I&apos;m {portfolioData.owner.name}, a {portfolioData.owner.role} focused on building robust, accessible, and high-performance digital solutions.
+                I&apos;m {portfolioData.owner.name}, a {portfolioData.owner.role} dedicated to building high-impact software and exploring the frontiers of AI.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <Button className="bg-primary hover:bg-primary/90 px-8 py-6 text-lg rounded-2xl group" asChild>
@@ -61,8 +61,8 @@ export default function Home() {
                 </Button>
               </div>
               <div className="flex items-center gap-6 pt-6">
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Github className="w-6 h-6" /></a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin className="w-6 h-6" /></a>
+                <a href={`https://${portfolioData.owner.github}`} target="_blank" className="text-muted-foreground hover:text-primary transition-colors"><Github className="w-6 h-6" /></a>
+                <a href={`https://${portfolioData.owner.linkedin}`} target="_blank" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin className="w-6 h-6" /></a>
                 <div className="flex items-center gap-2 text-muted-foreground text-sm border-l pl-6 border-muted">
                   <MapPin className="w-4 h-4" />
                   {portfolioData.owner.location}
@@ -74,8 +74,8 @@ export default function Home() {
               <div className="absolute -inset-4 bg-accent/20 rounded-full blur-3xl"></div>
               <div className="relative rounded-[2rem] overflow-hidden border-8 border-background shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
                 <Image
-                  src={profilePic?.imageUrl || "https://picsum.photos/seed/alex/600/600"}
-                  alt="Alex Chen Profile"
+                  src={profilePic?.imageUrl || "https://picsum.photos/seed/pantaleo/600/600"}
+                  alt="Pantaleo Kapis Profile"
                   width={600}
                   height={600}
                   className="object-cover w-full h-full"
@@ -99,7 +99,7 @@ export default function Home() {
               <h2 className="text-4xl font-headline font-bold text-primary">Professional Trajectory</h2>
             </div>
             <p className="text-muted-foreground max-w-md">
-              A chronological view of my roles, responsibilities, and significant contributions to the industry.
+              A chronological view of my roles, responsibilities, and significant contributions to software engineering and research.
             </p>
           </div>
 
@@ -168,10 +168,10 @@ export default function Home() {
               </div>
               <h2 className="text-4xl font-headline font-bold mb-6">Skills & Competencies</h2>
               <p className="text-primary-foreground/70 text-lg leading-relaxed mb-8">
-                I continuously evolve my technical stack to leverage the latest industry best practices while maintaining a foundation in reliable core technologies.
+                I continuously evolve my technical stack to leverage AI and modern web frameworks, focusing on tools that enable scalable and intelligent applications.
               </p>
               <Button variant="secondary" className="rounded-xl group">
-                Download Resume <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                Explore Tech Stack <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
             <div className="lg:col-span-2 grid sm:grid-cols-2 gap-6">
@@ -205,17 +205,23 @@ export default function Home() {
             </div>
             <div className="flex gap-2">
               <Badge className="bg-primary text-primary-foreground px-4 py-2 rounded-full cursor-pointer">All</Badge>
+              <Badge variant="outline" className="px-4 py-2 rounded-full cursor-pointer hover:bg-muted">AI/ML</Badge>
               <Badge variant="outline" className="px-4 py-2 rounded-full cursor-pointer hover:bg-muted">Web</Badge>
-              <Badge variant="outline" className="px-4 py-2 rounded-full cursor-pointer hover:bg-muted">Mobile</Badge>
-              <Badge variant="outline" className="px-4 py-2 rounded-full cursor-pointer hover:bg-muted">AI</Badge>
+              <Badge variant="outline" className="px-4 py-2 rounded-full cursor-pointer hover:bg-muted">Sustainability</Badge>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-10">
             {["project-1", "project-2", "project-3", "project-4"].map((id, idx) => {
               const projectImg = PlaceHolderImages.find(img => img.id === id);
-              const names = ["JourneyLens Portfolio", "EcoTracker Community", "HealthSync Dashboard", "Finlytics Forecasting"];
-              const tags = [["Next.js", "Tailwind", "GenAI"], ["React Native", "Firebase", "Maps"], ["D3.js", "Socket.io", "React"], ["Python", "PyTorch", "Tableau"]];
+              const names = ["Zingira Recycle", "AgriConnect AI", "Medi-Check", "FinSmart Engine"];
+              const tags = [["Next.js", "Firebase", "Python"], ["PyTorch", "React Native", "Flask"], ["Django", "PostgreSQL", "React"], ["FastAPI", "TensorFlow", "D3.js"]];
+              const descriptions = [
+                "A waste management and recycling optimization platform for urban cities.",
+                "AI-powered farming assistant for crop disease detection and market pricing.",
+                "A comprehensive healthcare records and diagnostic management system.",
+                "A smart financial forecasting engine with automated transaction categorization."
+              ];
               
               return (
                 <div key={idx} className="group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
@@ -242,7 +248,7 @@ export default function Home() {
                     </div>
                     <h3 className="text-2xl font-bold mb-2 group-hover:text-accent transition-colors">{names[idx]}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      A high-performance solution designed to solve complex user challenges through intuitive design and robust engineering.
+                      {descriptions[idx]}
                     </p>
                   </div>
                 </div>
@@ -262,9 +268,9 @@ export default function Home() {
             <div className="grid lg:grid-cols-2">
               <div className="p-12 lg:p-16 bg-primary text-primary-foreground flex flex-col justify-between">
                 <div>
-                  <h2 className="text-4xl font-headline font-bold mb-6 leading-tight">Let&apos;s build something <span className="text-accent italic">extraordinary</span> together.</h2>
+                  <h2 className="text-4xl font-headline font-bold mb-6 leading-tight">Let&apos;s build the <span className="text-accent italic">future</span> together.</h2>
                   <p className="text-primary-foreground/70 text-lg mb-10">
-                    Whether you have a question or a proposal, I&apos;m always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+                    Always open to discussing innovative projects, AI research collaborations, or technical opportunities that challenge the status quo.
                   </p>
                   
                   <div className="space-y-6">
@@ -290,8 +296,8 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-center gap-4 pt-10">
-                  <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-accent hover:border-accent hover:text-accent-foreground transition-all"><Github size={18} /></a>
-                  <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-accent hover:border-accent hover:text-accent-foreground transition-all"><Linkedin size={18} /></a>
+                  <a href={`https://${portfolioData.owner.github}`} target="_blank" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-accent hover:border-accent hover:text-accent-foreground transition-all"><Github size={18} /></a>
+                  <a href={`https://${portfolioData.owner.linkedin}`} target="_blank" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-accent hover:border-accent hover:text-accent-foreground transition-all"><Linkedin size={18} /></a>
                 </div>
               </div>
 
@@ -309,11 +315,11 @@ export default function Home() {
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Subject</label>
-                    <Input placeholder="Project Inquiry" className="h-12 border-muted bg-muted/20 rounded-xl" />
+                    <Input placeholder="Collaboration Inquiry" className="h-12 border-muted bg-muted/20 rounded-xl" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Message</label>
-                    <Textarea placeholder="How can I help you?" className="min-h-[150px] border-muted bg-muted/20 rounded-2xl resize-none" />
+                    <Textarea placeholder="How can we work together?" className="min-h-[150px] border-muted bg-muted/20 rounded-2xl resize-none" />
                   </div>
                   <Button className="w-full h-14 bg-primary hover:bg-primary/90 text-lg rounded-2xl group shadow-lg shadow-primary/20">
                     Send Message
@@ -336,7 +342,7 @@ export default function Home() {
             <span className="font-headline font-bold tracking-tight text-primary">JourneyLens</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Alex Chen. All rights reserved. Built with Next.js & GenAI.
+            © {new Date().getFullYear()} {portfolioData.owner.name}. All rights reserved.
           </p>
           <div className="flex items-center gap-8 text-sm font-medium text-muted-foreground">
             <a href="#" className="hover:text-primary">Home</a>
