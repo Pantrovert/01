@@ -1,0 +1,35 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "profile-pic",
+      "description": "Professional headshot of the portfolio owner",
+      "imageUrl": "https://picsum.photos/seed/profile/400/400",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "project-1",
+      "description": "Screenshot of JourneyLens project",
+      "imageUrl": "https://picsum.photos/seed/project1/800/600",
+      "imageHint": "tech project screenshot"
+    },
+    {
+      "id": "project-2",
+      "description": "Screenshot of EcoTracker project",
+      "imageUrl": "https://picsum.photos/seed/project2/800/600",
+      "imageHint": "sustainability app"
+    },
+    {
+      "id": "project-3",
+      "description": "Screenshot of HealthSync project",
+      "imageUrl": "https://picsum.photos/seed/project3/800/600",
+      "imageHint": "medical dashboard"
+    },
+    {
+      "id": "project-4",
+      "description": "Screenshot of Finlytics project",
+      "imageUrl": "https://picsum.photos/seed/project4/800/600",
+      "imageHint": "financial data visualization"
+    }
+  ]
+}
