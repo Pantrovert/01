@@ -3,33 +3,33 @@
   "placeholderImages": [
     {
       "id": "profile-pic",
-      "description": "Professional headshot of Pantaleo Kapis",
-      "imageUrl": "https://picsum.photos/seed/pantaleo/400/400",
+      "description": "Headshot of Pantaleo Kapis",
+      "imageUrl": "https://picsum.photos/seed/pantaleo-kapis-2024/600/600",
       "imageHint": "professional headshot"
     },
     {
       "id": "project-1",
-      "description": "Zingira Waste Management App",
-      "imageUrl": "https://picsum.photos/seed/zingira/800/600",
-      "imageHint": "recycling app dashboard"
+      "description": "Zingira Recycling Application",
+      "imageUrl": "https://picsum.photos/seed/zingira-app/800/600",
+      "imageHint": "waste management app"
     },
     {
       "id": "project-2",
-      "description": "AgriConnect AI Farming Tool",
-      "imageUrl": "https://picsum.photos/seed/agriconnect/800/600",
-      "imageHint": "agriculture data visualization"
+      "description": "AgriConnect Farming Assistant",
+      "imageUrl": "https://picsum.photos/seed/agriconnect-v2/800/600",
+      "imageHint": "agriculture dashboard"
     },
     {
       "id": "project-3",
-      "description": "Medi-Check Healthcare System",
-      "imageUrl": "https://picsum.photos/seed/medicheck/800/600",
-      "imageHint": "medical interface"
+      "description": "Fintech Dashboard",
+      "imageUrl": "https://picsum.photos/seed/fintech-dashboard/800/600",
+      "imageHint": "financial interface"
     },
     {
       "id": "project-4",
-      "description": "FinSmart Financial Engine",
-      "imageUrl": "https://picsum.photos/seed/finsmart/800/600",
-      "imageHint": "financial metrics"
+      "description": "Smart Logistics Engine",
+      "imageUrl": "https://picsum.photos/seed/logistics-engine/800/600",
+      "imageHint": "logistics tracking"
     }
   ]
 }

@@ -2,67 +2,66 @@
 export const portfolioData = {
   owner: {
     name: "Pantaleo Kapis",
-    role: "Software Engineer & ML Researcher",
-    tagline: "Building intelligent systems that bridge technology and human impact.",
+    role: "Software Engineer & Founder",
+    tagline: "Building intelligent systems for a sustainable digital future.",
     location: "Dar es Salaam, Tanzania",
-    email: "pantaleo@example.com",
+    email: "pantaleo.kapis@outlook.com",
     github: "github.com/pantrovert",
     linkedin: "linkedin.com/in/pantaleo-k-a26306206",
   },
-  academicJourney: `Pantaleo holds a Bachelor of Science in Computer Science from St. Joseph University in Tanzania (SJUIT). During his studies, he focused on Software Engineering and Artificial Intelligence, consistently leading technical initiatives and contributing to campus open-source projects.`,
-  professionalJourney: `Currently a Software Engineer focused on building scalable web applications and AI-driven solutions. Pantaleo has a strong background in freelance development, delivering custom software for various industries. He is particularly active in the East African tech ecosystem, developing platforms that address local challenges in waste management and agriculture.`,
-  skills: `Technical Proficiencies: Python (Django, FastAPI), JavaScript (React, Next.js), TensorFlow, PyTorch, PostgreSQL, Docker, AWS. Soft Skills: Problem Solving, Technical Strategy, Research, Collaborative Development.`,
+  academicJourney: `Pantaleo earned his Bachelor of Science in Computer Science from St. Joseph University in Tanzania (SJUIT), graduating in 2022. His academic path was marked by a deep dive into Software Engineering and Artificial Intelligence, where he developed a passion for leveraging technology to solve local environmental and social challenges.`,
+  professionalJourney: `Pantaleo is the Founder and CEO of Zingira, a tech-driven waste management and recycling platform in Tanzania. Since 2022, he has been leading the development of digital solutions that promote a circular economy. Alongside his entrepreneurial ventures, he has maintained a robust freelance career as a Software Engineer, specializing in full-stack development and AI integration for scalable applications.`,
+  skills: `Technical Proficiencies: JavaScript/TypeScript (React, Next.js, Node.js), Python (Django, FastAPI), Flutter, Firebase, PostgreSQL, Docker. Domain Expertise: Circular Economy Tech, Machine Learning, UI/UX Design, Agile Project Management.`,
   projects: `
-    - Zingira: A waste management and recycling optimization platform designed for urban environments.
-    - AgriConnect: An AI-powered application assisting small-scale farmers in crop disease detection and market pricing.
-    - Medi-Check: A healthcare management system streamlining patient records and diagnostic workflows.
-    - FinSmart: A lightweight financial tracking engine with automated categorization and insights.
+    - Zingira: A comprehensive waste management ecosystem including mobile and web platforms for tracking recycling and optimizing waste collection.
+    - AgriConnect: An AI-integrated farming assistant designed to help small-scale farmers identify crop diseases and access real-time market data.
+    - Portfolio V2: A high-performance personal portfolio built with Next.js 15, ShadCN UI, and Genkit for AI-driven interaction.
   `,
-  interests: `When not architecting software, Pantaleo is deeply involved in AI research, specifically in Natural Language Processing for local languages. He enjoys participating in hackathons, contributing to open-source software, and exploring sustainable tech initiatives.`,
+  interests: `Beyond coding, Pantaleo is committed to research in AI and Sustainability. He actively participates in the Tanzanian tech community, advocating for open-source development and mentoring junior engineers. He enjoys exploring the intersection of technology and environmental conservation.`,
   educationList: [
     {
       degree: "B.Sc. in Computer Science",
-      institution: "St. Joseph University in Tanzania",
-      period: "2019 - 2023",
-      achievements: "Specialization in AI & Software Engineering. Lead Developer for the University Innovation Hub. Finalist in National Tech Competition."
+      institution: "St. Joseph University in Tanzania (SJUIT)",
+      period: "2019 - 2022",
+      achievements: "Graduated with honors. Developed an award-winning prototype for waste management. Active member of the university's Innovation Hub."
     }
   ],
   experienceList: [
     {
+      role: "Founder & CEO",
+      company: "Zingira",
+      period: "Nov 2022 - Present",
+      description: "Spearheading a tech-driven approach to waste management in East Africa. Architected the platform's core infrastructure and led cross-functional teams to launch the first iteration of the recycling app."
+    },
+    {
       role: "Software Engineer",
-      company: "Freelance & Open Source",
-      period: "2023 - Present",
-      description: "Developing robust web applications and integrating machine learning models for diverse clients. Focused on performance optimization and scalable backend architectures."
+      company: "Freelance",
+      period: "2020 - Present",
+      description: "Delivering bespoke web and mobile solutions for local and international clients. Expert in building responsive UIs and robust backend services using modern JavaScript and Python frameworks."
     },
     {
-      role: "AI/ML Researcher (Focus)",
-      company: "Independent Projects",
-      period: "2022 - 2023",
-      description: "Researched and implemented computer vision models for agricultural disease identification. Integrated these models into mobile platforms for field use."
-    },
-    {
-      role: "Full Stack Developer Intern",
-      company: "Tech Solutions Ltd",
-      period: "2021",
-      description: "Collaborated on the development of enterprise-level dashboard systems. Improved data synchronization efficiency by 30% using optimized API structures."
+      role: "Lead Developer (Internship)",
+      company: "Tech Startups (Regional)",
+      period: "2021 - 2022",
+      description: "Contributed to various projects focusing on fintech and logistics. Optimized database queries and improved frontend load times for several client-facing dashboards."
     }
   ],
   skillCategories: [
     {
-      name: "Frontend & Web",
-      skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux"]
+      name: "Frontend Development",
+      skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Flutter"]
     },
     {
-      name: "Backend & AI",
-      skills: ["Python", "Django", "FastAPI", "TensorFlow", "PyTorch"]
+      name: "Backend & Cloud",
+      skills: ["Node.js", "Django", "FastAPI", "Firebase", "PostgreSQL", "AWS"]
     },
     {
-      name: "Data & Cloud",
-      skills: ["PostgreSQL", "MongoDB", "Docker", "AWS", "Git"]
+      name: "Artificial Intelligence",
+      skills: ["TensorFlow", "PyTorch", "Natural Language Processing", "GenAI"]
     },
     {
-      name: "Soft Skills",
-      skills: ["Analytical Thinking", "Project Management", "Technical Writing", "Open Source"]
+      name: "Strategy & Impact",
+      skills: ["Circular Economy", "Founder Strategy", "Product Design", "Agile"]
     }
   ]
 };
