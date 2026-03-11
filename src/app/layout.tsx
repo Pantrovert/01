@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Pantaleo Kiruwa | Aerospace Engineer & AME Aspiring',
-  description: 'The professional portfolio of Pantaleo Kiruwa, an aerospace engineering graduate from Jain University, passionate about space sciences and aircraft maintenance.',
+  description: 'The professional portfolio of Pantaleo Kiruwa, an aerospace engineering graduate from Jain University, passionate about space exploration and aircraft maintenance.',
 };
 
 export default function RootLayout({

@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useRef, useEffect } from "react";
@@ -19,7 +18,7 @@ export function AmaChat() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "ai",
-      content: "Hi! I'm Alex's AI assistant. Ask me anything about his professional journey, skills, or projects!",
+      content: `Hi! I'm Pantaleo's AI assistant. Ask me anything about his aerospace engineering journey, skills, or projects!`,
     },
   ]);
   const [input, setInput] = useState("");
@@ -81,7 +80,7 @@ export function AmaChat() {
             <div className="flex items-center gap-3">
               <Bot className="w-6 h-6" />
               <div>
-                <CardTitle className="text-xl">Alex&apos;s AI Assistant</CardTitle>
+                <CardTitle className="text-xl">Pantaleo&apos;s AI Assistant</CardTitle>
                 <CardDescription className="text-primary-foreground/70">
                   Ready to help with your inquiries
                 </CardDescription>
@@ -134,7 +133,7 @@ export function AmaChat() {
 
             <form onSubmit={handleSubmit} className="p-4 border-t bg-muted/30 flex gap-2">
               <Input
-                placeholder="How many years of experience does Alex have with React?"
+                placeholder="Ask about my aerospace experience..."
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 className="rounded-full bg-background"

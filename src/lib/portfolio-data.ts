@@ -2,13 +2,13 @@ export const portfolioData = {
   owner: {
     name: "Pantaleo Kiruwa",
     role: "Aerospace Engineer",
-    tagline: "Eager to contribute meaningfully to the Aeronautical sector as an Aircraft Maintenance Engineer.",
+    tagline: "Aerospace engineering graduate from IIAEM, Jain University, aspiring Aircraft Maintenance Engineer.",
     location: "Dar es Salaam, Tanzania",
     email: "pantaleo.kiruwa@example.com",
     github: "github.com/pantrovert",
     linkedin: "linkedin.com/in/pantaleo-k-a26306206",
   },
-  academicJourney: `Pantaleo is an aerospace engineering graduate from the International Institute of Aerospace Engineering and Management (IIAEM), Jain University. His academic career was driven by a fascination with space exploration and space sciences, providing him with a robust foundation in aeronautical principles, propulsion, and aircraft systems.`,
+  academicJourney: `Pantaleo Kiruwa is an aerospace engineering graduate from the International Institute of Aerospace Engineering and Management (IIAEM), Jain University. His academic career was driven by a fascination with space exploration and space sciences, providing him with a robust foundation in aeronautical principles, propulsion, and aircraft systems.`,
   professionalJourney: `As a fresh graduate, Pantaleo is eager to transition into the professional aeronautical sector. He is specifically focused on becoming an Aircraft Maintenance Engineer (AME), where he can apply his technical knowledge to ensure the safety and efficiency of aviation systems. He is committed to making a significant impact through rigorous technical standards and a passion for excellence in the field.`,
   skills: `Aeronautical Engineering, Aircraft Maintenance Principles, Space Sciences, Aerodynamics, Propulsion Systems, CAD/CAM, Aircraft Structures, Quality Control & Safety Standards.`,
   projects: `
