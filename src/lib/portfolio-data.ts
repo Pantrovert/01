@@ -12,17 +12,18 @@ export const portfolioData = {
   professionalJourney: `As a fresh graduate, Pantaleo is eager to transition into the professional aeronautical sector. He is specifically focused on becoming an Aircraft Maintenance Engineer (AME), where he can apply his technical knowledge to ensure the safety and efficiency of aviation systems. He is committed to making a significant impact through rigorous technical standards and a passion for excellence in the field.`,
   skills: `Aeronautical Engineering, Aircraft Maintenance Principles, Space Sciences, Aerodynamics, Propulsion Systems, CAD/CAM, Aircraft Structures, Quality Control & Safety Standards.`,
   projects: `
-    - Aerospace Design Analysis: Conducted in-depth research on aircraft structural integrity and performance optimization during his studies at IIAEM.
-    - Space Science Exploration: Participated in projects exploring the frontiers of space exploration and its future impact on global communication and research.
-    - Technical Systems Maintenance: Hands-on academic projects involving the teardown and analysis of propulsion systems and aircraft mechanical components.
+    - Aerospace Design Analysis: Research on aircraft structural integrity.
+    - Space Science Exploration: Projects exploring global communication via space science.
+    - Propulsion Systems Teardown: Technical analysis of mechanical systems.
+    - Aeronautical Standards Compliance: Analysis of international aviation safety standards.
   `,
-  interests: `Beyond his professional goals, Pantaleo is deeply passionate about space exploration and the evolving landscape of space sciences. He enjoys staying updated on the latest advancements in aerospace technology and is committed to lifelong learning in the aeronautical field.`,
+  interests: `Space exploration, aerospace technology advancements, and lifelong learning in aeronautical maintenance.`,
   educationList: [
     {
       degree: "Aerospace Engineering Graduate",
       institution: "International Institute of Aerospace Engineering and Management (IIAEM), Jain University",
-      period: "Completed 2024",
-      achievements: "Specialized in Aerospace engineering with a focus on space sciences and aircraft systems. Actively participated in technical workshops and aerospace research projects."
+      period: "2024",
+      achievements: "Focused on space sciences and aircraft systems. Participated in technical workshops and research projects."
     }
   ],
   experienceList: [
@@ -30,13 +31,39 @@ export const portfolioData = {
       role: "Aspiring Aircraft Maintenance Engineer",
       company: "Aeronautical Sector",
       period: "Present",
-      description: "Preparing for professional certification and entry-level roles within the aircraft maintenance field. Developing a deep understanding of maintenance manuals, safety protocols, and aircraft inspection techniques."
+      description: "Developing a deep understanding of maintenance manuals, safety protocols, and aircraft inspection techniques."
     },
     {
       role: "Aerospace Engineering Intern",
-      company: "Academic & Research Projects",
+      company: "IIAEM Research",
       period: "2022 - 2024",
-      description: "Contributed to various research-based projects at IIAEM, focusing on aerodynamic simulations and structural analysis for small-scale aircraft models."
+      description: "Contributed to aerodynamic simulations and structural analysis for small-scale aircraft models."
+    }
+  ],
+  projectsList: [
+    {
+      id: "project-1",
+      title: "Aerospace Design Analysis",
+      tags: ["Structural Analysis", "IIAEM"],
+      description: "Research on aircraft structural integrity and performance optimization conducted during studies at Jain University."
+    },
+    {
+      id: "project-2",
+      title: "Space Science Exploration",
+      tags: ["Space Sciences", "Research"],
+      description: "Exploration of space science advancements and their future impact on global communication."
+    },
+    {
+      id: "project-3",
+      title: "Propulsion Systems Teardown",
+      tags: ["Maintenance", "Hands-on"],
+      description: "Detailed technical teardown and analysis of mechanical systems in aerospace propulsion."
+    },
+    {
+      id: "project-4",
+      title: "Aeronautical Standards Compliance",
+      tags: ["Compliance", "Aviation Safety"],
+      description: "Analysis of international aviation standards and rigorous maintenance compliance protocols."
     }
   ],
   skillCategories: [

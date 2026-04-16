@@ -73,7 +73,7 @@ export default function Home() {
               <div className="absolute -inset-4 bg-accent/20 rounded-full blur-3xl"></div>
               <div className="relative rounded-[2rem] overflow-hidden border-8 border-background shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
                 <Image
-                  src={profilePic?.imageUrl || "https://picsum.photos/seed/pantaleo/600/600"}
+                  src={profilePic?.imageUrl || "https://picsum.photos/seed/pantaleo-kiruwa/600/600"}
                   alt="Pantaleo Kiruwa Profile"
                   width={600}
                   height={600}
@@ -124,73 +124,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Academic Milestones */}
-      <section id="education" className="py-24">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <div className="flex items-center justify-center gap-2 text-accent font-bold mb-2 uppercase tracking-widest text-xs">
-              <GraduationCap className="w-4 h-4" />
-              Learning Journey
-            </div>
-            <h2 className="text-4xl font-headline font-bold text-primary">Academic Milestones</h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {portfolioData.educationList.map((edu, idx) => (
-              <Card key={idx} className="border-none bg-secondary/30 rounded-3xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
-                <CardHeader className="p-8 pb-0">
-                  <div className="w-12 h-12 rounded-2xl bg-primary flex items-center justify-center text-primary-foreground mb-4">
-                    <GraduationCap size={24} />
-                  </div>
-                  <CardTitle className="text-2xl mb-1">{edu.degree}</CardTitle>
-                  <CardDescription className="text-primary font-semibold text-base">{edu.institution}</CardDescription>
-                </CardHeader>
-                <CardContent className="p-8 pt-4">
-                  <p className="text-accent font-bold text-sm mb-4">{edu.period}</p>
-                  <p className="text-muted-foreground">{edu.achievements}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Skills & Competencies */}
-      <section id="skills" className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-3 gap-16">
-            <div className="lg:col-span-1">
-              <div className="flex items-center gap-2 text-accent font-bold mb-4 uppercase tracking-widest text-xs">
-                <Code2 className="w-4 h-4" />
-                Technical Expertise
-              </div>
-              <h2 className="text-4xl font-headline font-bold mb-6">Skills & Competencies</h2>
-              <p className="text-primary-foreground/70 text-lg leading-relaxed mb-8">
-                I specialize in aerospace principles and aeronatutical maintenance, leveraging academic rigor to solve complex engineering challenges.
-              </p>
-              <Button variant="secondary" className="rounded-xl group">
-                Explore Skills <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </div>
-            <div className="lg:col-span-2 grid sm:grid-cols-2 gap-6">
-              {portfolioData.skillCategories.map((cat, idx) => (
-                <div key={idx} className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
-                  <h3 className="text-xl font-bold mb-4 text-accent">{cat.name}</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {cat.skills.map((skill, sIdx) => (
-                      <Badge key={sIdx} variant="secondary" className="bg-white/10 hover:bg-accent hover:text-accent-foreground text-white border-none py-1.5 px-3 rounded-lg text-xs font-medium transition-all">
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Project Portfolio */}
       <section id="projects" className="py-24">
         <div className="container mx-auto px-6">
@@ -205,23 +138,14 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-10">
-            {["project-1", "project-2", "project-3", "project-4"].map((id, idx) => {
-              const projectImg = PlaceHolderImages.find(img => img.id === id);
-              const names = ["Aerospace Design Analysis", "Space Science Exploration", "Propulsion Systems Teardown", "Aeronautical Standards Compliance"];
-              const tags = [["Structural Analysis", "IIAEM"], ["Space Sciences", "Research"], ["Maintenance", "Hands-on"], ["Compliance", "Aviation Safety"]];
-              const descriptions = [
-                "Research on aircraft structural integrity and performance optimization conducted during studies at Jain University.",
-                "Exploration of space science advancements and their future impact on global communication.",
-                "Detailed technical teardown and analysis of mechanical systems in aerospace propulsion.",
-                "Analysis of international aviation standards and rigorous maintenance compliance protocols."
-              ];
-              
+            {portfolioData.projectsList.map((project, idx) => {
+              const projectImg = PlaceHolderImages.find(img => img.id === project.id);
               return (
                 <div key={idx} className="group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
                   <div className="aspect-video relative overflow-hidden">
                     <Image
-                      src={projectImg?.imageUrl || `https://picsum.photos/seed/${id}/800/600`}
-                      alt={names[idx]}
+                      src={projectImg?.imageUrl || `https://picsum.photos/seed/${project.id}/800/600`}
+                      alt={project.title}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-700"
                     />
@@ -233,15 +157,15 @@ export default function Home() {
                   </div>
                   <div className="p-8 bg-card border-x border-b rounded-b-3xl">
                     <div className="flex flex-wrap gap-2 mb-4">
-                      {tags[idx].map((tag, tIdx) => (
+                      {project.tags.map((tag, tIdx) => (
                         <span key={tIdx} className="text-[10px] font-bold uppercase tracking-widest text-accent bg-accent/10 px-2 py-0.5 rounded-full">
                           {tag}
                         </span>
                       ))}
                     </div>
-                    <h3 className="text-2xl font-bold mb-2 group-hover:text-accent transition-colors">{names[idx]}</h3>
+                    <h3 className="text-2xl font-bold mb-2 group-hover:text-accent transition-colors">{project.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      {descriptions[idx]}
+                      {project.description}
                     </p>
                   </div>
                 </div>
