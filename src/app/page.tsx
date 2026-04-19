@@ -13,9 +13,15 @@ import {
   MapPin,
   Github,
   Linkedin,
-  Rocket
+  Rocket,
+  Send,
+  GraduationCap,
+  Sparkles
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 export default function Home() {
   const profilePic = PlaceHolderImages.find(img => img.id === "profile-pic");
@@ -40,7 +46,7 @@ export default function Home() {
                 Advancing the <span className="text-accent underline decoration-accent/30 underline-offset-8">Frontiers</span> of Flight.
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-xl font-body">
-                Hi, I&apos;m {portfolioData.owner.name}. An aerospace engineering graduate from the International Institute of Aerospace Engineering and Management, Jain University, passionate about space exploration, and space sciences in general, and eager to work in the Aeronautical sector as an Aircraft Maintenance Engineer, contribute meaningfully, and make a significant impact in the field.
+                Hi, I&apos;m {portfolioData.owner.name}. {portfolioData.owner.tagline}
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <Button className="bg-primary hover:bg-primary/90 px-8 py-6 text-lg rounded-2xl group" asChild>
@@ -80,7 +86,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Professional Trajectory */}
+      {/* Experience Section */}
       <section id="experience" className="py-24 bg-white/50">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
@@ -91,34 +97,41 @@ export default function Home() {
               </div>
               <h2 className="text-4xl font-headline font-bold text-primary">Professional Trajectory</h2>
             </div>
-            <p className="text-muted-foreground max-w-md">
-              A chronological view of my roles, academic research, and career aspirations in the aerospace sector.
-            </p>
           </div>
 
-          <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-border before:to-transparent">
+          <div className="space-y-8">
             {portfolioData.experienceList.map((exp, idx) => (
-              <div key={idx} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-                <div className="flex items-center justify-center w-10 h-10 rounded-full border border-border bg-background group-hover:bg-primary group-hover:text-primary-foreground group-hover:scale-110 transition-all duration-300 shadow-sm z-10 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                  <Briefcase size={16} />
-                </div>
-                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-2xl border bg-card shadow-sm hover:shadow-md transition-shadow group-hover:border-accent/50">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
-                    <h3 className="text-xl font-bold text-primary">{exp.role}</h3>
-                    <span className="text-xs font-bold text-accent px-2 py-1 bg-accent/10 rounded-full">{exp.period}</span>
+              <Card key={idx} className="border-none shadow-sm hover:shadow-md transition-shadow rounded-2xl overflow-hidden">
+                <CardContent className="p-8">
+                  <div className="flex flex-col md:flex-row justify-between gap-4">
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-xl bg-primary/5 flex items-center justify-center text-primary">
+                          <Briefcase size={20} />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold text-primary">{exp.role}</h3>
+                          <p className="text-muted-foreground font-medium">{exp.company}</p>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground leading-relaxed pt-2">
+                        {exp.description}
+                      </p>
+                    </div>
+                    <div className="shrink-0">
+                      <span className="px-4 py-1.5 rounded-full bg-accent/10 text-accent font-bold text-xs uppercase tracking-wider">
+                        {exp.period}
+                      </span>
+                    </div>
                   </div>
-                  <p className="font-semibold text-sm mb-2">{exp.company}</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {exp.description}
-                  </p>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Project Portfolio */}
+      {/* Projects Section */}
       <section id="projects" className="py-24">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
@@ -135,7 +148,7 @@ export default function Home() {
             {portfolioData.projectsList.map((project, idx) => {
               const projectImg = PlaceHolderImages.find(img => img.id === project.id);
               return (
-                <div key={idx} className="group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div key={idx} className="group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 bg-card border">
                   <div className="aspect-video relative overflow-hidden">
                     <Image
                       src={projectImg?.imageUrl || `/${project.id}.jpg`}
@@ -145,13 +158,13 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
                       <Button className="bg-accent text-accent-foreground hover:bg-white transition-colors" asChild>
-                        <Link href={`/projects/${project.id}`}>
+                        <Link href={`/projects/${project.id}/`}>
                           <ExternalLink className="mr-2 w-4 h-4" /> View Details
                         </Link>
                       </Button>
                     </div>
                   </div>
-                  <div className="p-8 bg-card border-x border-b rounded-b-3xl">
+                  <div className="p-8">
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.tags.map((tag, tIdx) => (
                         <span key={tIdx} className="text-[10px] font-bold uppercase tracking-widest text-accent bg-accent/10 px-2 py-0.5 rounded-full">
@@ -171,6 +184,75 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Contact Section */}
+      <section id="contact" className="py-24 bg-primary text-primary-foreground overflow-hidden relative">
+        <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-accent/20 rounded-full blur-3xl opacity-50"></div>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <div>
+                <div className="flex items-center gap-2 text-accent font-bold mb-2 uppercase tracking-widest text-xs">
+                  <Sparkles className="w-4 h-4" />
+                  Get In Touch
+                </div>
+                <h2 className="text-4xl lg:text-5xl font-headline font-bold mb-6">Let&apos;s Build the Future of Aviation.</h2>
+                <p className="text-primary-foreground/80 text-lg leading-relaxed max-w-lg">
+                  Whether you have a question about my research or want to discuss a potential collaboration in the aerospace sector, I&apos;m always open to new opportunities.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center">
+                    <Mail className="w-6 h-6 text-accent" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold opacity-60 uppercase tracking-widest">Email Me</p>
+                    <a href={`mailto:${portfolioData.owner.email}`} className="text-lg font-medium hover:text-accent transition-colors">
+                      {portfolioData.owner.email}
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center">
+                    <Linkedin className="w-6 h-6 text-accent" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold opacity-60 uppercase tracking-widest">Connect</p>
+                    <a href={`https://${portfolioData.owner.linkedin}`} target="_blank" className="text-lg font-medium hover:text-accent transition-colors">
+                      LinkedIn Profile
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <Card className="rounded-[2.5rem] p-2 bg-white/5 border-white/10 backdrop-blur-sm">
+              <CardContent className="p-8 space-y-6">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <label className="text-xs font-bold uppercase opacity-60 ml-2">Name</label>
+                    <Input className="bg-white/10 border-white/10 text-white placeholder:text-white/30 h-12 rounded-2xl" placeholder="Your Name" />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-xs font-bold uppercase opacity-60 ml-2">Email</label>
+                    <Input className="bg-white/10 border-white/10 text-white placeholder:text-white/30 h-12 rounded-2xl" placeholder="hello@example.com" />
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <label className="text-xs font-bold uppercase opacity-60 ml-2">Message</label>
+                  <Textarea className="bg-white/10 border-white/10 text-white placeholder:text-white/30 min-h-[150px] rounded-2xl" placeholder="How can I help you?" />
+                </div>
+                <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-bold py-6 rounded-2xl text-lg group">
+                  Send Message
+                  <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-12 border-t bg-muted/30">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
@@ -184,9 +266,9 @@ export default function Home() {
             © {new Date().getFullYear()} {portfolioData.owner.name}. All rights reserved.
           </p>
           <div className="flex items-center gap-8 text-sm font-medium text-muted-foreground">
-            <a href="#" className="hover:text-primary">Home</a>
-            <a href="#experience" className="hover:text-primary">Experience</a>
-            <a href="#projects" className="hover:text-primary">Projects</a>
+            <a href="#" className="hover:text-primary transition-colors">Home</a>
+            <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
+            <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
           </div>
         </div>
       </footer>
