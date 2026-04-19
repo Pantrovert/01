@@ -14,6 +14,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
+/**
+ * Required for static export (output: 'export') with dynamic routes.
+ * Tells Next.js exactly which pages to generate at build time.
+ */
 export async function generateStaticParams() {
   return portfolioData.projectsList.map((project) => ({
     id: project.id,
