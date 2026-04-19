@@ -8,27 +8,27 @@
       "imageHint": "professional headshot"
     },
     {
-      "id": "project-1",
+      "id": "project1",
       "description": "Optimization of Airfoils",
-      "imageUrl": "/project-1.jpg",
+      "imageUrl": "/project1.jpg",
       "imageHint": "airfoil aerodynamics"
     },
     {
-      "id": "project-2",
+      "id": "project2",
       "description": "Hypersonic Vehicles",
-      "imageUrl": "/project-2.jpg",
+      "imageUrl": "/project2.jpg",
       "imageHint": "hypersonic flight"
     },
     {
-      "id": "project-3",
+      "id": "project3",
       "description": "Vibration with Variable Mass",
-      "imageUrl": "/project-3.jpg",
+      "imageUrl": "/project3.jpg",
       "imageHint": "mechanical vibration"
     },
     {
-      "id": "project-4",
+      "id": "project4",
       "description": "Helicopter Vibration Diagnostic",
-      "imageUrl": "/project-4.jpg",
+      "imageUrl": "/project4.jpg",
       "imageHint": "helicopter maintenance"
     }
   ]

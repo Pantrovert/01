@@ -41,25 +41,25 @@ export const portfolioData = {
   ],
   projectsList: [
     {
-      id: "project-1",
+      id: "project1",
       title: "Optimization of Airfoils",
       tags: ["Aerodynamics", "Efficiency"],
       description: "The project is about enhancing aerodynamic performance through advanced analysis and design techniques for improved efficiency and lift-to-drag ratio for airfoils."
     },
     {
-      id: "project-2",
+      id: "project2",
       title: "Hypersonic Vehicles",
       tags: ["Dynamics", "Control Systems"],
       description: "This is aimed at describing the dynamics and control of hypersonic vehicles taking into account some of the recent experimental models."
     },
     {
-      id: "project-3",
+      id: "project3",
       title: "Vibration with Variable Mass",
       tags: ["Mechanical Systems", "Dynamics"],
       description: "The project aimed at researching dynamic behaviors, resonance effects, and damping mechanisms to advance understanding and control of complex mechanical systems."
     },
     {
-      id: "project-4",
+      id: "project4",
       title: "Helicopter Vibration Diagnostic for maintenance",
       tags: ["Maintenance", "Predictive Analytics"],
       description: "This technique is used to calculate normal operating conditions of an engineering system using models that determine the current state of the system, projecting the future loading environments for that system, and then forecasting through simulation and previous records the remaining useful life of the system."
