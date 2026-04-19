@@ -2,7 +2,6 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { portfolioData } from "@/lib/portfolio-data";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -19,9 +18,8 @@ type Message = {
  * This avoids importing any Genkit/Node.js libraries into the build.
  */
 async function localAskMeAnything(question: string) {
-  console.log("AI request received in static mode:", question);
   return { 
-    answer: "The interactive AI 'Ask Me Anything' feature is currently limited in this static version of the site hosted on GitHub Pages. To enable full AI functionality with Gemini 2.5 Flash, the project requires a server-enabled platform like Firebase App Hosting." 
+    answer: "I'm Pantaleo's static AI assistant. To enable the full GenAI capabilities (powered by Gemini 2.5 Flash), this portfolio would typically be deployed on a platform like Firebase App Hosting. For now, feel free to explore the portfolio sections to learn more about Pantaleo's aerospace projects and expertise!" 
   };
 }
 
@@ -29,7 +27,7 @@ export function AmaChat() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "ai",
-      content: `Hi! I'm Pantaleo's AI assistant. Ask me anything about his aerospace engineering journey, skills, or projects!`,
+      content: `Hi! I'm Pantaleo's assistant. Ask me anything about his aerospace engineering journey, skills, or projects!`,
     },
   ]);
   const [input, setInput] = useState("");
@@ -52,7 +50,6 @@ export function AmaChat() {
     setIsLoading(true);
 
     try {
-      // Calling the local static version directly
       const result = await localAskMeAnything(userMessage);
       setMessages((prev) => [...prev, { role: "ai", content: result.answer }]);
     } catch (error) {
@@ -71,11 +68,11 @@ export function AmaChat() {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/20 text-accent-foreground text-sm font-bold mb-4">
             <Sparkles className="w-4 h-4" />
-            <span>GEN-AI POWERED</span>
+            <span>PORTFOLIO ASSISTANT</span>
           </div>
           <h2 className="text-4xl font-headline font-bold mb-4 text-primary">Ask Me Anything</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Get instant answers about my career, skills, and background from my custom-trained AI assistant.
+            Get instant answers about my career, skills, and background from my custom assistant.
           </p>
         </div>
 
@@ -84,7 +81,7 @@ export function AmaChat() {
             <div className="flex items-center gap-3">
               <Bot className="w-6 h-6" />
               <div>
-                <CardTitle className="text-xl">Pantaleo&apos;s AI Assistant</CardTitle>
+                <CardTitle className="text-xl">Pantaleo&apos;s Assistant</CardTitle>
                 <CardDescription className="text-primary-foreground/70">
                   Ready to help with your inquiries
                 </CardDescription>
