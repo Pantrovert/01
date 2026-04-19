@@ -1,7 +1,7 @@
 
 /**
- * @fileOverview AI Feature Removed for Static Deployment
+ * AI Assistant logic removed to ensure zero-dependency static build.
  */
-export async function askMeAnything(input: any) {
-  return { answer: "AI feature is currently disabled." };
+export async function askMeAnything() {
+  return { answer: "AI service is currently unavailable." };
 }

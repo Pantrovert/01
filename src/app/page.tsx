@@ -5,13 +5,10 @@ import { Navbar } from "@/components/navbar";
 import { portfolioData } from "@/lib/portfolio-data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { 
-  GraduationCap, 
   Briefcase, 
-  Code2, 
   FolderKanban, 
   Mail, 
   ArrowRight,
-  ChevronRight,
   ExternalLink,
   MapPin,
   Github,
@@ -19,10 +16,6 @@ import {
   Rocket
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 
 export default function Home() {
   const profilePic = PlaceHolderImages.find(img => img.id === "profile-pic");
@@ -174,77 +167,6 @@ export default function Home() {
                 </div>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Form */}
-      <section id="contact" className="py-24">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto rounded-[3rem] bg-white shadow-2xl overflow-hidden border">
-            <div className="grid lg:grid-cols-2">
-              <div className="p-12 lg:p-16 bg-primary text-primary-foreground flex flex-col justify-between">
-                <div>
-                  <h2 className="text-4xl font-headline font-bold mb-6 leading-tight">Let&apos;s build the <span className="text-accent italic">future</span> of aviation.</h2>
-                  <p className="text-primary-foreground/70 text-lg mb-10">
-                    Always open to discussing aerospace innovations, maintenance collaborations, or technical opportunities in the aeronautical sector.
-                  </p>
-                  
-                  <div className="space-y-6">
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">
-                        <Mail className="w-6 h-6 text-accent" />
-                      </div>
-                      <div>
-                        <p className="text-xs uppercase tracking-widest font-bold opacity-50">Email Me</p>
-                        <p className="text-lg font-medium">{portfolioData.owner.email}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">
-                        <MapPin className="w-6 h-6 text-accent" />
-                      </div>
-                      <div>
-                        <p className="text-xs uppercase tracking-widest font-bold opacity-50">Location</p>
-                        <p className="text-lg font-medium">{portfolioData.owner.location}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4 pt-10">
-                  <a href={`https://${portfolioData.owner.github}`} target="_blank" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-accent hover:border-accent hover:text-accent-foreground transition-all"><Github size={18} /></a>
-                  <a href={`https://${portfolioData.owner.linkedin}`} target="_blank" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-accent hover:border-accent hover:text-accent-foreground transition-all"><Linkedin size={18} /></a>
-                </div>
-              </div>
-
-              <div className="p-12 lg:p-16">
-                <form className="space-y-6">
-                  <div className="grid sm:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Full Name</label>
-                      <Input placeholder="Your Name" className="h-12 border-muted bg-muted/20 rounded-xl" />
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Email Address</label>
-                      <Input placeholder="your@email.com" className="h-12 border-muted bg-muted/20 rounded-xl" />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Subject</label>
-                    <Input placeholder="Aerospace Collaboration" className="h-12 border-muted bg-muted/20 rounded-xl" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Message</label>
-                    <Textarea placeholder="How can we work together in the aeronautical sector?" className="min-h-[150px] border-muted bg-muted/20 rounded-2xl resize-none" />
-                  </div>
-                  <Button className="w-full h-14 bg-primary hover:bg-primary/90 text-lg rounded-2xl group shadow-lg shadow-primary/20">
-                    Send Message
-                    <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </form>
-              </div>
-            </div>
           </div>
         </div>
       </section>
