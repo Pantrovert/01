@@ -77,7 +77,7 @@ export const portfolioData = {
       date: "2024",
       description: "This technique is used to calculate normal operating conditions and forecast remaining useful life through simulation and previous records.",
       fullHighlight: "Helicopters are essential tools in a wide range of industries, from emergency services to defence, but they require rigorous maintenance due to their intricate mechanical designs. Modern sensors and complex algorithms are used by the HVD system to continuously detect and assess vibrations in helicopters. It provides predictive capabilities in addition to real-time monitoring, enabling proactive maintenance.\n\nThis research enables operators to recognize and fix mechanical defects before they become serious, saving downtime, lowering maintenance costs, and improving safety by building a comprehensive database of vibration signatures across diverse helicopter models and operational settings.\n\nAdditionally, broader uses of the knowledge and technology created for this research include structural health monitoring and industrial gear maintenance.\n\nFor more details on the project feel free to click the link.",
-      projectLink: "/reports/report4.pdf",
+      projectLink: "https://github.com/Pantrovert/Helicopter-Vibration-Diagnostic-for-Maintenance",
       reportPath: "/reports/report4.pdf"
     }
   ],
