@@ -3,33 +3,33 @@
   "placeholderImages": [
     {
       "id": "profile-pic",
-      "description": "Headshot of Pantaleo Kapis",
-      "imageUrl": "https://picsum.photos/seed/pantaleo-kapis-2024/600/600",
+      "description": "Professional headshot of Pantaleo Kiruwa",
+      "imageUrl": "/profile.jpg",
       "imageHint": "professional headshot"
     },
     {
       "id": "project-1",
-      "description": "Zingira Recycling Application",
-      "imageUrl": "https://picsum.photos/seed/zingira-app/800/600",
-      "imageHint": "waste management app"
+      "description": "Optimization of Airfoils",
+      "imageUrl": "/project-1.jpg",
+      "imageHint": "airfoil aerodynamics"
     },
     {
       "id": "project-2",
-      "description": "AgriConnect Farming Assistant",
-      "imageUrl": "https://picsum.photos/seed/agriconnect-v2/800/600",
-      "imageHint": "agriculture dashboard"
+      "description": "Hypersonic Vehicles",
+      "imageUrl": "/project-2.jpg",
+      "imageHint": "hypersonic flight"
     },
     {
       "id": "project-3",
-      "description": "Fintech Dashboard",
-      "imageUrl": "https://picsum.photos/seed/fintech-dashboard/800/600",
-      "imageHint": "financial interface"
+      "description": "Vibration with Variable Mass",
+      "imageUrl": "/project-3.jpg",
+      "imageHint": "mechanical vibration"
     },
     {
       "id": "project-4",
-      "description": "Smart Logistics Engine",
-      "imageUrl": "https://picsum.photos/seed/logistics-engine/800/600",
-      "imageHint": "logistics tracking"
+      "description": "Helicopter Vibration Diagnostic",
+      "imageUrl": "/project-4.jpg",
+      "imageHint": "helicopter maintenance"
     }
   ]
 }

@@ -9,25 +9,25 @@
     {
       "id": "project-1",
       "description": "Optimization of Airfoils",
-      "imageUrl": "https://picsum.photos/seed/airfoil-optimization/800/600",
+      "imageUrl": "/project-1.jpg",
       "imageHint": "airfoil aerodynamics"
     },
     {
       "id": "project-2",
       "description": "Hypersonic Vehicles",
-      "imageUrl": "https://picsum.photos/seed/hypersonic-vehicle/800/600",
+      "imageUrl": "/project-2.jpg",
       "imageHint": "hypersonic flight"
     },
     {
       "id": "project-3",
       "description": "Vibration with Variable Mass",
-      "imageUrl": "https://picsum.photos/seed/vibration-analysis/800/600",
+      "imageUrl": "/project-3.jpg",
       "imageHint": "mechanical vibration"
     },
     {
       "id": "project-4",
       "description": "Helicopter Vibration Diagnostic",
-      "imageUrl": "https://picsum.photos/seed/helicopter-maintenance/800/600",
+      "imageUrl": "/project-4.jpg",
       "imageHint": "helicopter maintenance"
     }
   ]
