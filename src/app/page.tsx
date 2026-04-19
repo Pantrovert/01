@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/navbar";
-import { AmaChat } from "@/components/ama-chat";
 import { portfolioData } from "@/lib/portfolio-data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { 
@@ -179,9 +178,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* AI Ask Me Anything */}
-      <AmaChat />
-
       {/* Contact Form */}
       <section id="contact" className="py-24">
         <div className="container mx-auto px-6">
@@ -267,8 +263,8 @@ export default function Home() {
           </p>
           <div className="flex items-center gap-8 text-sm font-medium text-muted-foreground">
             <a href="#" className="hover:text-primary">Home</a>
-            <a href="#projects" className="hover:text-primary">Experience</a>
-            <a href="#ama" className="hover:text-primary">AI Chat</a>
+            <a href="#experience" className="hover:text-primary">Experience</a>
+            <a href="#projects" className="hover:text-primary">Projects</a>
           </div>
         </div>
       </footer>

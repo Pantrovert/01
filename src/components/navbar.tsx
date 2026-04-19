@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -19,8 +20,6 @@ export function Navbar() {
 
   const navLinks = [
     { name: "Experience", href: "#experience" },
-    { name: "Education", href: "#education" },
-    { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ];
@@ -56,7 +55,7 @@ export function Navbar() {
             </a>
           ))}
           <Button className="bg-primary hover:bg-primary/90 rounded-full" asChild>
-            <a href="#ama">Ask AI Assistant</a>
+            <a href="#contact">Contact Me</a>
           </Button>
         </div>
 
@@ -84,8 +83,8 @@ export function Navbar() {
               </a>
             ))}
             <Button className="w-full bg-primary rounded-xl" asChild>
-              <a href="#ama" onClick={() => setIsMobileMenuOpen(false)}>
-                Ask AI Assistant
+              <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+                Contact Me
               </a>
             </Button>
           </div>
