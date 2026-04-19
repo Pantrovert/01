@@ -23,7 +23,7 @@ This portfolio showcases academic research, professional trajectory, and technic
    ```
 
 ## Deployment
-This project is optimized for deployment on **Firebase App Hosting** or **Vercel**.
+This project is optimized for deployment on **Firebase App Hosting**, **Vercel**, or **GitHub Pages**.
 
 ### GitHub Pages Note
-If you are deploying to GitHub Pages, ensure you use a GitHub Action for Next.js to handle the build and export process.
+If you are deploying to GitHub Pages, ensure you use a GitHub Action for Next.js to handle the build and export process. The project is already configured with `output: 'export'` and `unoptimized: true` for images.
