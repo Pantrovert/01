@@ -14,11 +14,10 @@ type Message = {
 };
 
 /**
- * Local response logic for GitHub Pages (Static Deployment).
- * This function handles chat logic without requiring a server backend.
+ * Local response logic for Static Deployment (GitHub Pages).
+ * We define this locally to avoid any imports from the /ai folder during build.
  */
 async function localAskMeAnything(question: string) {
-  // Simulate a short delay to feel like an AI
   await new Promise(resolve => setTimeout(resolve, 800));
   
   const response = "Hi! I'm Pantaleo's portfolio assistant. Currently, this site is running on GitHub Pages as a static site. To enable my advanced AI features (powered by Gemini), the project would need to be deployed to a platform with a backend, like Firebase App Hosting. For now, please explore the Experience and Projects sections to learn about my journey in Aerospace Engineering!";

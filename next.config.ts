@@ -33,7 +33,9 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  webpack: (config) => {
+  webpack: (config, { isServer }) => {
+    // Aggressively ignore Node.js specific modules that Genkit/OpenTelemetry use
+    // This prevents the "async_hooks" module not found error during static export
     config.resolve.fallback = {
       ...config.resolve.fallback,
       async_hooks: false,

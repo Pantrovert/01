@@ -1,11 +1,12 @@
 
 /**
- * @fileOverview STATIC BUILD STUB - DO NOT ADD IMPORTS
- * This file is a placeholder to prevent Genkit from being bundled in static exports.
+ * @fileOverview STATIC BUILD STUB
+ * This file is a placeholder that contains NO genkit imports.
+ * This prevents the bundler from trying to resolve Node.js modules like async_hooks.
  */
 
 export async function askMeAnything(input: any) {
   return { 
-    answer: "Static mode active. Please deploy to Firebase App Hosting for full AI features." 
+    answer: "Static mode active. For full AI features, this project requires a backend like Firebase App Hosting." 
   };
 }
