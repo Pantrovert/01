@@ -1,13 +1,11 @@
 
 /**
- * @fileOverview A static-compatible stub for the AI agent.
+ * @fileOverview A 100% pure TypeScript stub for the AI agent.
  * 
- * This file is intentionally simplified to have ZERO imports from Genkit or Node-specific 
- * libraries to ensure the GitHub Pages static build (which has no server) succeeds.
+ * This file contains NO imports to prevent the Next.js bundler from 
+ * pulling in server-side dependencies during static export for GitHub Pages.
  */
 
-// We define simple types instead of importing from 'zod' to be absolutely safe 
-// from any dependency chain issues during the static export.
 export type AskMeAnythingInput = {
   question: string;
   academicJourney?: string;
@@ -26,9 +24,9 @@ export type AskMeAnythingOutput = {
  * Since GitHub Pages is static, we return a helpful message.
  */
 export async function askMeAnything(input: AskMeAnythingInput): Promise<AskMeAnythingOutput> {
-  console.log("AI request received:", input.question);
+  console.log("AI request received in static mode:", input.question);
   
-  const message = "The AI Assistant is currently unavailable on this static version of the site (GitHub Pages). To enable the interactive AI 'Ask Me Anything' feature, this project should be deployed to a server-enabled platform like Firebase App Hosting.";
+  const message = "The interactive AI 'Ask Me Anything' feature is currently disabled in this static version of the site (GitHub Pages). To enable full AI functionality with Gemini 2.5 Flash, the project should be deployed to a server-enabled platform like Firebase App Hosting.";
   
   return { 
     answer: message 
