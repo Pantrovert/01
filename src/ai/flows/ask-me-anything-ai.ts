@@ -7,9 +7,9 @@
  * like Firebase App Hosting.
  */
 
-import { z } from 'genkit';
+import { z } from 'zod';
 
-// Input Schema
+// Input Schema - Using standard Zod to avoid Genkit's Node.js dependencies in the browser
 const AskMeAnythingInputSchema = z.object({
   question: z.string().describe("The user's question about Pantaleo Kiruwa."),
   academicJourney: z.string().describe("A detailed description of the academic background."),
