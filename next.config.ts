@@ -34,17 +34,18 @@ const nextConfig: NextConfig = {
   },
   // Ensure trailing slashes for GitHub Pages compatibility
   trailingSlash: true,
-  // Fix for async_hooks and other node modules in the browser
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.resolve.fallback = {
-        ...config.resolve.fallback,
-        async_hooks: false,
-        fs: false,
-        net: false,
-        tls: false,
-      };
-    }
+  // Force webpack to ignore Node.js modules that Genkit/OpenTelemetry might pull in
+  webpack: (config) => {
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      async_hooks: false,
+      fs: false,
+      net: false,
+      tls: false,
+      child_process: false,
+      os: false,
+      path: false,
+    };
     return config;
   },
 };
