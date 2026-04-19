@@ -1,8 +1,11 @@
 
 /**
  * @fileOverview Static stub for GitHub Pages deployment.
- * This file is kept minimal to prevent the bundler from pulling in Node.js dependencies.
+ * This file contains NO imports to prevent build-time errors with Node.js modules.
  */
-export async function askMeAnything() {
-  return { answer: "Static mode active." };
+
+export async function askMeAnything(input: any) {
+  return { 
+    answer: "Static mode active. Please deploy to Firebase App Hosting for full AI features." 
+  };
 }

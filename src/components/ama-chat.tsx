@@ -18,7 +18,7 @@ type Message = {
  * Since GitHub Pages is a static host, we provide helpful context locally.
  */
 async function localAskMeAnything(question: string) {
-  // Simulate a short delay
+  // Simulate a short delay to feel like an AI
   await new Promise(resolve => setTimeout(resolve, 800));
   
   return { 
