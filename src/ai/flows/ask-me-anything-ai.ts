@@ -1,8 +1,8 @@
 
 /**
- * @fileOverview Empty stub to prevent build errors during static export.
- * Logic is handled locally in ama-chat.tsx for GitHub Pages compatibility.
+ * @fileOverview Static stub for GitHub Pages deployment.
+ * This file is kept minimal to prevent the bundler from pulling in Node.js dependencies.
  */
 export async function askMeAnything() {
-  return { answer: "" };
+  return { answer: "Static mode active." };
 }

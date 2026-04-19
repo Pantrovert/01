@@ -14,12 +14,15 @@ type Message = {
 };
 
 /**
- * Local static version of the AI function for GitHub Pages.
- * This avoids importing any Genkit/Node.js libraries into the build.
+ * Local response logic for GitHub Pages.
+ * Since GitHub Pages is a static host, we provide helpful context locally.
  */
 async function localAskMeAnything(question: string) {
+  // Simulate a short delay
+  await new Promise(resolve => setTimeout(resolve, 800));
+  
   return { 
-    answer: "I'm Pantaleo's static AI assistant. To enable the full GenAI capabilities (powered by Gemini 2.5 Flash), this portfolio would typically be deployed on a platform like Firebase App Hosting. For now, feel free to explore the portfolio sections to learn more about Pantaleo's aerospace projects and expertise!" 
+    answer: "Hi! I'm Pantaleo's portfolio assistant. Currently, this site is running on GitHub Pages as a static site. To enable my advanced AI features (powered by Gemini), the project would need to be deployed to a platform with a backend, like Firebase App Hosting. For now, please explore the Experience and Projects sections to learn about my journey in Aerospace Engineering!" 
   };
 }
 

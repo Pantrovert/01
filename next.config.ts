@@ -43,6 +43,11 @@ const nextConfig: NextConfig = {
       child_process: false,
       os: false,
       path: false,
+      http: false,
+      https: false,
+      zlib: false,
+      stream: false,
+      crypto: false,
     };
 
     config.resolve.alias = {
