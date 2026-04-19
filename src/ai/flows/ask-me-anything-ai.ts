@@ -1,7 +1,7 @@
 
 /**
- * @fileOverview Static stub for GitHub Pages deployment.
- * This file contains NO imports to prevent build-time errors with Node.js modules.
+ * @fileOverview STATIC BUILD STUB - DO NOT ADD IMPORTS
+ * This file is a placeholder to prevent Genkit from being bundled in static exports.
  */
 
 export async function askMeAnything(input: any) {

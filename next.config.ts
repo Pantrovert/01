@@ -59,6 +59,7 @@ const nextConfig: NextConfig = {
       '@opentelemetry/sdk-node': false,
       '@opentelemetry/sdk-trace-node': false,
       '@opentelemetry/context-async-hooks': false,
+      'async_hooks': false,
     };
 
     return config;
