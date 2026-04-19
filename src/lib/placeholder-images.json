@@ -8,27 +8,27 @@
     },
     {
       "id": "project-1",
-      "description": "Aerospace Design Analysis",
-      "imageUrl": "https://picsum.photos/seed/aerospace-design/800/600",
-      "imageHint": "aircraft engineering"
+      "description": "Optimization of Airfoils",
+      "imageUrl": "https://picsum.photos/seed/airfoil-optimization/800/600",
+      "imageHint": "airfoil aerodynamics"
     },
     {
       "id": "project-2",
-      "description": "Space Science Exploration",
-      "imageUrl": "https://picsum.photos/seed/space-science/800/600",
-      "imageHint": "space exploration"
+      "description": "Hypersonic Vehicles",
+      "imageUrl": "https://picsum.photos/seed/hypersonic-vehicle/800/600",
+      "imageHint": "hypersonic flight"
     },
     {
       "id": "project-3",
-      "description": "Propulsion Systems Teardown",
-      "imageUrl": "https://picsum.photos/seed/propulsion-teardown/800/600",
-      "imageHint": "jet engine"
+      "description": "Vibration with Variable Mass",
+      "imageUrl": "https://picsum.photos/seed/vibration-analysis/800/600",
+      "imageHint": "mechanical vibration"
     },
     {
       "id": "project-4",
-      "description": "Aeronautical Standards Compliance",
-      "imageUrl": "https://picsum.photos/seed/aviation-standards/800/600",
-      "imageHint": "aviation safety"
+      "description": "Helicopter Vibration Diagnostic",
+      "imageUrl": "https://picsum.photos/seed/helicopter-maintenance/800/600",
+      "imageHint": "helicopter maintenance"
     }
   ]
 }
