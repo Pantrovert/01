@@ -47,8 +47,8 @@ export const portfolioData = {
       date: "2022",
       description: "The project is about enhancing aerodynamic performance through advanced analysis and design techniques for improved efficiency and lift-to-drag ratio for airfoils.",
       fullHighlight: "The aviation field is growing increasingly interested in hypersonic speed for passenger transportation, which requires careful study of enabling technologies for optimal vehicle design.\n\nThis paper is aimed at describing the dynamics and control of these vehicles taking into account some of the recent experimental models.\n\nWhile significant work has been done on air-breathing hypersonic technology, there remain critical technological gaps that need to be filled before hypersonic transport systems can be a reality.\n\nHypersonic flight has long been a goal of aerospace engineers, as it promises to revolutionize air and space travel by dramatically reducing travel times and enabling access to space at a lower cost.\n\nFeel free to check out the Project by visiting the Project Link.",
-      projectLink: "#",
-      reportPath: "/reports/report1.pdf"
+      projectLink: "/reports/project1.pdf",
+      reportPath: "/reports/project1_report.pdf"
     },
     {
       id: "project2",
