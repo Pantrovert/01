@@ -32,10 +32,8 @@ const nextConfig: NextConfig = {
     ],
     unoptimized: true,
   },
-  // Ensure trailing slashes for GitHub Pages compatibility
   trailingSlash: true,
   webpack: (config) => {
-    // Provide fallbacks for Node.js modules in all environments
     config.resolve.fallback = {
       ...config.resolve.fallback,
       async_hooks: false,
@@ -47,7 +45,6 @@ const nextConfig: NextConfig = {
       path: false,
     };
 
-    // Completely block Genkit and OpenTelemetry from being bundled
     config.resolve.alias = {
       ...config.resolve.alias,
       'genkit': false,

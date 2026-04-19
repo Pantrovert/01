@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { askMeAnything } from "@/ai/flows/ask-me-anything-ai";
 import { portfolioData } from "@/lib/portfolio-data";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -13,6 +12,17 @@ type Message = {
   role: "user" | "ai";
   content: string;
 };
+
+/**
+ * Local static version of the AI function for GitHub Pages.
+ * This avoids importing any Genkit/Node.js libraries into the build.
+ */
+async function localAskMeAnything(question: string) {
+  console.log("AI request received in static mode:", question);
+  return { 
+    answer: "The interactive AI 'Ask Me Anything' feature is currently limited in this static version of the site hosted on GitHub Pages. To enable full AI functionality with Gemini 2.5 Flash, the project requires a server-enabled platform like Firebase App Hosting." 
+  };
+}
 
 export function AmaChat() {
   const [messages, setMessages] = useState<Message[]>([
@@ -41,15 +51,8 @@ export function AmaChat() {
     setIsLoading(true);
 
     try {
-      const result = await askMeAnything({
-        question: userMessage,
-        academicJourney: portfolioData.academicJourney,
-        professionalJourney: portfolioData.professionalJourney,
-        skills: portfolioData.skills,
-        projects: portfolioData.projects,
-        interests: portfolioData.interests,
-      });
-
+      // Calling the local static version directly
+      const result = await localAskMeAnything(userMessage);
       setMessages((prev) => [...prev, { role: "ai", content: result.answer }]);
     } catch (error) {
       setMessages((prev) => [
