@@ -1,15 +1,13 @@
 
-'use server';
 /**
  * @fileOverview An AI agent that answers questions about Pantaleo Kiruwa's journey, skills, and projects.
- *
- * - askMeAnything - A function that handles answering questions about the portfolio content.
- * - AskMeAnythingInput - The input type for the askMeAnything function.
- * - AskMeAnythingOutput - The return type for the askMeAnything function.
+ * 
+ * NOTE: This implementation is currently stubbed for static hosting environments (like GitHub Pages).
+ * For full AI functionality, this project should be deployed to a server-side environment 
+ * like Firebase App Hosting.
  */
 
-import {ai} from '@/ai/genkit';
-import {z} from 'genkit';
+import { z } from 'genkit';
 
 // Input Schema
 const AskMeAnythingInputSchema = z.object({
@@ -24,59 +22,21 @@ export type AskMeAnythingInput = z.infer<typeof AskMeAnythingInputSchema>;
 
 // Output Schema
 const AskMeAnythingOutputSchema = z.object({
-  answer: z.string().describe("The AI's relevant and contextualized response to the user's question based on the provided portfolio content."),
+  answer: z.string().describe("The AI's relevant and contextualized response to the user's question."),
 });
 export type AskMeAnythingOutput = z.infer<typeof AskMeAnythingOutputSchema>;
 
-// Wrapper function to call the flow
+/**
+ * Wrapper function to call the AI.
+ * Since GitHub Pages is static, we return a helpful message instead of attempting a server call.
+ */
 export async function askMeAnything(input: AskMeAnythingInput): Promise<AskMeAnythingOutput> {
-  return askMeAnythingFlow(input);
+  console.log("AI request received:", input.question);
+  
+  // Dynamic message based on environment
+  const message = "The AI Assistant is currently unavailable because this site is hosted on a static platform (GitHub Pages). To enable the AI 'Ask Me Anything' feature, please deploy this project to Firebase App Hosting.";
+  
+  return { 
+    answer: message 
+  };
 }
-
-// Define the prompt
-const askMeAnythingPrompt = ai.definePrompt({
-  name: 'askMeAnythingPrompt',
-  input: {schema: AskMeAnythingInputSchema},
-  output: {schema: AskMeAnythingOutputSchema},
-  prompt: `You are an AI assistant designed to answer questions about Pantaleo Kiruwa.
-Your goal is to provide relevant, contextualized, and concise responses based *only* on the provided information below.
-Pantaleo is an aerospace engineering graduate from IIAEM, Jain University, aspiring to be an Aircraft Maintenance Engineer.
-
-Here is the information about Pantaleo:
-
-### Academic Journey
-{{{academicJourney}}}
-
-### Professional Journey
-{{{professionalJourney}}}
-
-### Skills & Competencies
-{{{skills}}}
-
-### Projects
-{{{projects}}}
-
-### Interests
-{{{interests}}}
-
-Based on the information above, please answer the following question from a visitor:
-Question: "{{{question}}}"
-
-Your Answer:`
-});
-
-// Define the flow
-const askMeAnythingFlow = ai.defineFlow(
-  {
-    name: 'askMeAnythingFlow',
-    inputSchema: AskMeAnythingInputSchema,
-    outputSchema: AskMeAnythingOutputSchema,
-  },
-  async (input) => {
-    const {output} = await askMeAnythingPrompt(input);
-    if (!output) {
-      throw new Error('Failed to generate response from AI.');
-    }
-    return output;
-  }
-);
