@@ -2,7 +2,7 @@
 "use client";
 
 /**
- * AI Assistant removed for static build stability on GitHub Pages.
+ * AI Chat UI component removed to ensure zero-dependency static build.
  */
 export function AmaChat() {
   return null;

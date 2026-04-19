@@ -54,7 +54,7 @@ export default function Home() {
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </Button>
-                <Button variant="outline" className="px-8 py-6 text-lg rounded-2xl" asChild>
+                <Button variant="outline" className="px-8 py-6 text-lg rounded-2xl border-2" asChild>
                   <a href="#contact">Contact Me</a>
                 </Button>
               </div>

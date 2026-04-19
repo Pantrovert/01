@@ -8,15 +8,15 @@ import {
   Rocket,
   Calendar,
   Globe,
-  FileText
+  FileText,
+  MapPin
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
 /**
- * Required for static export (output: 'export') with dynamic routes.
- * Tells Next.js exactly which pages to generate at build time.
+ * MANDATORY for 'output: export': Tells Next.js which paths to pre-render.
  */
 export async function generateStaticParams() {
   return portfolioData.projectsList.map((project) => ({

@@ -1,7 +1,7 @@
 
 /**
- * AI logic removed to ensure successful static export on GitHub Actions.
+ * AI logic removed for static build stability.
  */
 export async function askMeAnything() {
-  return { answer: "Static mode enabled. AI response unavailable." };
+  return { answer: "AI is currently disabled for static deployment." };
 }
