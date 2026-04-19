@@ -33,7 +33,7 @@ const nextConfig: NextConfig = {
   },
   trailingSlash: true,
   webpack: (config, { isServer }) => {
-    // Aggressively prevent Node.js modules from being bundled
+    // Aggressively prevent Node.js modules from being bundled in static build
     config.resolve.fallback = {
       ...config.resolve.fallback,
       async_hooks: false,
