@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "profile-pic",
+      "description": "Professional headshot of Pantaleo Kiruwa",
+      "imageUrl": "https://picsum.photos/seed/pantaleo-profile-final/600/600",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "project-1",
+      "description": "Aerospace Design Analysis",
+      "imageUrl": "https://picsum.photos/seed/aerospace-design/800/600",
+      "imageHint": "aircraft engineering"
+    },
+    {
+      "id": "project-2",
+      "description": "Space Science Exploration",
+      "imageUrl": "https://picsum.photos/seed/space-science/800/600",
+      "imageHint": "space exploration"
+    },
+    {
+      "id": "project-3",
+      "description": "Propulsion Systems Teardown",
+      "imageUrl": "https://picsum.photos/seed/propulsion-teardown/800/600",
+      "imageHint": "jet engine"
+    },
+    {
+      "id": "project-4",
+      "description": "Aeronautical Standards Compliance",
+      "imageUrl": "https://picsum.photos/seed/aviation-standards/800/600",
+      "imageHint": "aviation safety"
+    }
+  ]
 }
