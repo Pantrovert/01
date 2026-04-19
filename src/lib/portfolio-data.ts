@@ -57,7 +57,7 @@ export const portfolioData = {
       date: "2023",
       description: "This is aimed at describing the dynamics and control of hypersonic vehicles taking into account some of the recent experimental models.",
       fullHighlight: "Hypersonic flight represents the next frontier in aeronautics. This project delves into the complex control laws required to stabilize vehicles traveling above Mach 5. By analyzing recent experimental flight data, we identify the thermal and structural stresses that challenge conventional airframe designs.",
-      projectLink: "/reports/report2.pdf",
+      projectLink: "https://www.researchgate.net/publication/379809253_Technical_Seminar_on_Emerging_Modern_Technologies_in_the_Aerospace_Industry_Report_on_HYPERSONIC_VEHICLES_Submitted_in_partial_fulfilment_for_the_award_of_the_degree_of_BACHELOR_OF_TECHNOLOGY_IN_AEROS",
       reportPath: "/reports/report2.pdf"
     },
     {
