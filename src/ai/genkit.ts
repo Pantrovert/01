@@ -1,5 +1,5 @@
 
 /**
- * Genkit initialization removed to fix static build errors.
+ * Genkit initialization removed.
  */
 export const ai = null;

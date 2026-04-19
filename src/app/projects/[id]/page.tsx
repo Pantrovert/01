@@ -5,19 +5,25 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { 
   ArrowLeft, 
-  ExternalLink, 
-  FileText, 
-  Download,
   Rocket,
+  Calendar,
   Globe,
-  Calendar
+  FileText
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = portfolioData.projectsList.find((p) => p.id === params.id);
+// Required for static export in Next.js 15
+export async function generateStaticParams() {
+  return portfolioData.projectsList.map((project) => ({
+    id: project.id,
+  }));
+}
+
+export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const project = portfolioData.projectsList.find((p) => p.id === id);
 
   if (!project) {
     notFound();
@@ -72,13 +78,13 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 
               <div className="flex flex-col sm:flex-row gap-4 pt-6">
                 <Button className="bg-primary hover:bg-primary/90 px-8 py-6 text-lg rounded-2xl group" asChild>
-                  <a href={project.projectLink} target="_blank">
+                  <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
                     <Globe className="mr-2 w-5 h-5" />
                     Visit Project Link
                   </a>
                 </Button>
                 <Button variant="outline" className="px-8 py-6 text-lg rounded-2xl border-2 group" asChild>
-                  <a href={project.reportPath} target="_blank">
+                  <a href={project.reportPath} target="_blank" rel="noopener noreferrer">
                     <FileText className="mr-2 w-5 h-5 text-accent" />
                     View Project Report
                   </a>

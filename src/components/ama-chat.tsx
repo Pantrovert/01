@@ -2,7 +2,7 @@
 "use client";
 
 /**
- * AI Assistant feature is currently disabled for static deployment.
+ * AI Assistant removed for static build stability.
  */
 export function AmaChat() {
   return null;

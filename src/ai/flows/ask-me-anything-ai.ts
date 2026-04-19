@@ -1,7 +1,7 @@
 
 /**
- * AI Assistant logic removed to ensure zero-dependency static build.
+ * AI Logic removed to resolve build errors.
  */
 export async function askMeAnything() {
-  return { answer: "AI service is currently unavailable." };
+  return { answer: null };
 }
