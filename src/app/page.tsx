@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import Link from "next/link";
 import { Navbar } from "@/components/navbar";
 import { AmaChat } from "@/components/ama-chat";
 import { portfolioData } from "@/lib/portfolio-data";
@@ -74,7 +75,7 @@ export default function Home() {
               <div className="absolute -inset-4 bg-accent/20 rounded-full blur-3xl"></div>
               <div className="relative rounded-[2rem] overflow-hidden border-8 border-background shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
                 <Image
-                  src={profilePic?.imageUrl || "https://picsum.photos/seed/pantaleo-kiruwa/600/600"}
+                  src={profilePic?.imageUrl || "/profile.jpg"}
                   alt="Pantaleo Kiruwa Profile"
                   width={600}
                   height={600}
@@ -145,14 +146,16 @@ export default function Home() {
                 <div key={idx} className="group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
                   <div className="aspect-video relative overflow-hidden">
                     <Image
-                      src={projectImg?.imageUrl || `https://picsum.photos/seed/${project.id}/800/600`}
+                      src={projectImg?.imageUrl || `/${project.id}.jpg`}
                       alt={project.title}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
                       <Button className="bg-accent text-accent-foreground hover:bg-white transition-colors" asChild>
-                        <a href="#"><ExternalLink className="mr-2 w-4 h-4" /> View Details</a>
+                        <Link href={`/projects/${project.id}`}>
+                          <ExternalLink className="mr-2 w-4 h-4" /> View Details
+                        </Link>
                       </Button>
                     </div>
                   </div>

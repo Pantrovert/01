@@ -44,25 +44,37 @@ export const portfolioData = {
       id: "project1",
       title: "Optimization of Airfoils",
       tags: ["Aerodynamics", "Efficiency"],
-      description: "The project is about enhancing aerodynamic performance through advanced analysis and design techniques for improved efficiency and lift-to-drag ratio for airfoils."
+      description: "The project is about enhancing aerodynamic performance through advanced analysis and design techniques for improved efficiency and lift-to-drag ratio for airfoils.",
+      fullHighlight: "The aviation field is growing increasingly interested in hypersonic speed for passenger transportation, which requires careful study of enabling technologies for optimal vehicle design.\n\nThis paper is aimed at describing the dynamics and control of these vehicles taking into account some of the recent experimental models.\n\nWhile significant work has been done on air-breathing hypersonic technology, there remain critical technological gaps that need to be filled before hypersonic transport systems can be a reality.\n\nHypersonic flight has long been a goal of aerospace engineers, as it promises to revolutionize air and space travel by dramatically reducing travel times and enabling access to space at a lower cost.",
+      projectLink: "#",
+      reportPath: "/reports/report1.pdf"
     },
     {
       id: "project2",
       title: "Hypersonic Vehicles",
       tags: ["Dynamics", "Control Systems"],
-      description: "This is aimed at describing the dynamics and control of hypersonic vehicles taking into account some of the recent experimental models."
+      description: "This is aimed at describing the dynamics and control of hypersonic vehicles taking into account some of the recent experimental models.",
+      fullHighlight: "Hypersonic flight represents the next frontier in aeronautics. This project delves into the complex control laws required to stabilize vehicles traveling above Mach 5. By analyzing recent experimental flight data, we identify the thermal and structural stresses that challenge conventional airframe designs.",
+      projectLink: "#",
+      reportPath: "/reports/report2.pdf"
     },
     {
       id: "project3",
       title: "Vibration with Variable Mass",
       tags: ["Mechanical Systems", "Dynamics"],
-      description: "The project aimed at researching dynamic behaviors, resonance effects, and damping mechanisms to advance understanding and control of complex mechanical systems."
+      description: "The project aimed at researching dynamic behaviors, resonance effects, and damping mechanisms to advance understanding and control of complex mechanical systems.",
+      fullHighlight: "Mechanical systems with variable mass present unique challenges in resonance control. This research explores how fuel consumption and structural changes during flight affect the vibration profiles of aerospace components. Understanding these shifts is crucial for extending the life of engine mounts and airframe joints.",
+      projectLink: "#",
+      reportPath: "/reports/report3.pdf"
     },
     {
       id: "project4",
       title: "Helicopter Vibration Diagnostic for maintenance",
       tags: ["Maintenance", "Predictive Analytics"],
-      description: "This technique is used to calculate normal operating conditions of an engineering system using models that determine the current state of the system, projecting the future loading environments for that system, and then forecasting through simulation and previous records the remaining useful life of the system."
+      description: "This technique is used to calculate normal operating conditions and forecast remaining useful life through simulation and previous records.",
+      fullHighlight: "Maintenance in helicopters is heavily dependent on monitoring vibrations in the rotor system. This project develops a predictive model that uses historical vibration signatures to detect early-stage mechanical fatigue, allowing for preemptive part replacement and significantly reducing the risk of mid-flight failures.",
+      projectLink: "#",
+      reportPath: "/reports/report4.pdf"
     }
   ],
   skillCategories: [
