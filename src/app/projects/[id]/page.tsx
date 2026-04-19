@@ -1,4 +1,3 @@
-
 import { portfolioData } from "@/lib/portfolio-data";
 import { Navbar } from "@/components/navbar";
 import { Button } from "@/components/ui/button";
@@ -8,8 +7,7 @@ import {
   Rocket,
   Calendar,
   Globe,
-  FileText,
-  MapPin
+  FileText
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";

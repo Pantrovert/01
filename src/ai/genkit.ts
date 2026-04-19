@@ -1,6 +1,5 @@
-
 /**
- * AI configuration removed to ensure successful static export on GitHub Actions.
- * GitHub Pages does not support server-side processes.
+ * AI configuration removed to ensure successful static export.
+ * This file is now a stub to prevent build errors.
  */
 export const ai = null;
