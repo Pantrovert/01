@@ -1,5 +1,5 @@
 
 /**
- * Genkit initialization removed to resolve build errors in static environment.
+ * AI logic removed to ensure successful static export on GitHub Actions.
  */
 export const ai = null;

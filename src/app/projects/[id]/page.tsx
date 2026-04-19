@@ -14,7 +14,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-// Required for static export in Next.js 15
 export async function generateStaticParams() {
   return portfolioData.projectsList.map((project) => ({
     id: project.id,

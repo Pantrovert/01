@@ -15,7 +15,6 @@ import {
   Linkedin,
   Rocket,
   Send,
-  GraduationCap,
   Sparkles
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -78,7 +77,6 @@ export default function Home() {
                   width={600}
                   height={600}
                   className="object-cover w-full h-full"
-                  data-ai-hint="professional headshot"
                 />
               </div>
             </div>
