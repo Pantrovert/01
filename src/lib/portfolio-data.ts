@@ -57,7 +57,7 @@ export const portfolioData = {
       date: "2023",
       description: "This is aimed at describing the dynamics and control of hypersonic vehicles taking into account some of the recent experimental models.",
       fullHighlight: "Hypersonic flight represents the next frontier in aeronautics. This project delves into the complex control laws required to stabilize vehicles traveling above Mach 5. By analyzing recent experimental flight data, we identify the thermal and structural stresses that challenge conventional airframe designs.",
-      projectLink: "#",
+      projectLink: "/reports/report2.pdf",
       reportPath: "/reports/report2.pdf"
     },
     {
@@ -67,7 +67,7 @@ export const portfolioData = {
       date: "2023",
       description: "The project aimed at researching dynamic behaviors, resonance effects, and damping mechanisms to advance understanding and control of complex mechanical systems.",
       fullHighlight: "Mechanical systems with variable mass present unique challenges in resonance control. This research explores how fuel consumption and structural changes during flight affect the vibration profiles of aerospace components. Understanding these shifts is crucial for extending the life of engine mounts and airframe joints.",
-      projectLink: "#",
+      projectLink: "/reports/report3.pdf",
       reportPath: "/reports/report3.pdf"
     },
     {
@@ -76,8 +76,8 @@ export const portfolioData = {
       tags: ["Maintenance", "Predictive Analytics"],
       date: "2024",
       description: "This technique is used to calculate normal operating conditions and forecast remaining useful life through simulation and previous records.",
-      fullHighlight: "Maintenance in helicopters is heavily dependent on monitoring vibrations in the rotor system. This project develops a predictive model that uses historical vibration signatures to detect early-stage mechanical fatigue, allowing for preemptive part replacement and significantly reducing the risk of mid-flight failures.",
-      projectLink: "#",
+      fullHighlight: "Maintenance in helicopters is heavily dependent on monitoring vibrations in the rotor system. This project develops a predictive model that uses historical vibration signatures to detect early-stage mechanical fatigue, allowing for preemptive part replacement and significantly reducing the risk of mid-flight failures.\n\nThis technique calculates normal operating conditions of an engineering system using models that determine the current state of the system, projecting the future loading environments for that system, and then forecasting through simulation and previous records the remaining useful life of the system.",
+      projectLink: "/reports/report4.pdf",
       reportPath: "/reports/report4.pdf"
     }
   ],
