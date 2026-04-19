@@ -3,7 +3,7 @@
     {
       "id": "profile-pic",
       "description": "Professional headshot of Pantaleo Kiruwa",
-      "imageUrl": "https://picsum.photos/seed/pantaleo-profile-final/600/600",
+      "imageUrl": "/profile.jpg",
       "imageHint": "professional headshot"
     },
     {
