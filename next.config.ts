@@ -1,7 +1,6 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
-  output: 'export', // Required for static hosting like GitHub Pages
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -29,8 +28,10 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
-    unoptimized: true, // Required for static export
+    unoptimized: true,
   },
+  // We avoid output: 'export' here because it conflicts with AI server actions
+  // If deploying to GitHub Pages, AI will not work. 
 };
 
 export default nextConfig;

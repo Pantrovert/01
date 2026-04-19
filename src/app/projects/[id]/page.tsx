@@ -1,13 +1,10 @@
-
 import { portfolioData } from "@/lib/portfolio-data";
 import { Navbar } from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { 
   ArrowLeft, 
-  ExternalLink, 
   FileText, 
-  Download,
   Rocket,
   Globe,
   Calendar
@@ -16,8 +13,16 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = portfolioData.projectsList.find((p) => p.id === params.id);
+// Required for static export with dynamic routes in Next.js
+export async function generateStaticParams() {
+  return portfolioData.projectsList.map((project) => ({
+    id: project.id,
+  }));
+}
+
+export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const project = portfolioData.projectsList.find((p) => p.id === id);
 
   if (!project) {
     notFound();
@@ -84,34 +89,16 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                   </a>
                 </Button>
               </div>
-
-              <div className="bg-accent/5 p-6 rounded-3xl border border-accent/10 mt-12">
-                <p className="text-sm font-semibold text-accent mb-2 uppercase tracking-widest">Aeronautical Note</p>
-                <p className="text-muted-foreground text-sm italic">
-                  This project was conducted as part of the aerospace engineering curriculum at IIAEM, Jain University, focusing on advanced simulation and diagnostic techniques.
-                </p>
-              </div>
             </div>
 
             <div className="space-y-12 lg:sticky lg:top-32">
-              <div className="relative rounded-[2.5rem] overflow-hidden border-8 border-white shadow-2xl aspect-square lg:aspect-video">
+              <div className="relative rounded-[2.5rem] overflow-hidden border-8 border-white shadow-2xl aspect-video">
                 <Image
-                  src={`/${project.id}.jpg`}
+                  src={`https://picsum.photos/seed/${id}/800/600`}
                   alt={project.title}
                   fill
                   className="object-cover"
                 />
-              </div>
-              
-              <div className="grid grid-cols-2 gap-4">
-                <div className="p-6 bg-white border rounded-3xl shadow-sm">
-                  <p className="text-xs font-bold text-muted-foreground uppercase mb-2">Technique</p>
-                  <p className="font-headline font-bold text-primary">Advanced Analysis</p>
-                </div>
-                <div className="p-6 bg-white border rounded-3xl shadow-sm">
-                  <p className="text-xs font-bold text-muted-foreground uppercase mb-2">Scope</p>
-                  <p className="font-headline font-bold text-primary">Aeronautical Systems</p>
-                </div>
               </div>
             </div>
           </div>
