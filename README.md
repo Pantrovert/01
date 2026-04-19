@@ -8,22 +8,25 @@ This portfolio showcases academic research, professional trajectory, and technic
 ### Key Features
 - **Dynamic Project Pages**: Detailed highlights of research in Airfoil Optimization, Hypersonic Vehicles, and Vibration Diagnostics.
 - **AI Assistant**: A custom-trained "Ask Me Anything" chat powered by Genkit AI to answer questions about Pantaleo's journey.
-- **Responsive Design**: Built with Next.js, Tailwind CSS, and ShadCN UI for a seamless experience across all devices.
+- **Responsive Design**: Built with Next.js, Tailwind CSS, and ShadCN UI.
 
-## How to Run Locally
-1. Clone the repository.
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Set up your environment variables in a `.env` file (refer to `.env.example` if available).
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
+## GitHub Pages Deployment Instructions
+To launch this website on your GitHub Pages URL:
 
-## Deployment
-This project is optimized for deployment on **Firebase App Hosting**, **Vercel**, or **GitHub Pages**.
+1.  **Configure GitHub Pages**:
+    - Go to your repository on GitHub.
+    - Click **Settings** > **Pages**.
+    - Under **Build and deployment** > **Source**, select **GitHub Actions**.
+2.  **Push your code**:
+    - Ensure your images are in `public/` (e.g., `project1.jpg`).
+    - Ensure your reports are in `public/reports/` (e.g., `project1.pdf`).
+    - The included `.github/workflows/deploy.yml` will handle the rest.
+3.  **Wait for the Build**:
+    - Go to the **Actions** tab in your repository to see the progress.
+    - Once finished, your site will be live at `https://<your-username>.github.io/<repository-name>/`.
 
-### GitHub Pages Note
-If you are deploying to GitHub Pages, ensure you use a GitHub Action for Next.js to handle the build and export process. The project is already configured with `output: 'export'` and `unoptimized: true` for images.
+## Technical Details
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS & ShadCN UI
+- **AI**: Google Genkit (Gemini 2.5 Flash)
+- **Icons**: Lucide React
