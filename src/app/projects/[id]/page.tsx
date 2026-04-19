@@ -57,7 +57,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                   </div>
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>2024</span>
+                    <span>{project.date}</span>
                   </div>
                 </div>
               </div>
