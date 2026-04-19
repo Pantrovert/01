@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/navbar";
@@ -20,6 +21,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { AmaChat } from "@/components/ama-chat";
 
 export default function Home() {
   const profilePic = PlaceHolderImages.find(img => img.id === "profile-pic");
@@ -249,6 +251,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* AI Assistant FAB */}
+      <AmaChat />
 
       {/* Footer */}
       <footer className="py-12 border-t bg-muted/30">

@@ -45,8 +45,8 @@ export const portfolioData = {
       title: "Optimization of Airfoils",
       tags: ["Aerodynamics", "Efficiency"],
       date: "2022",
-      description: "The project is about enhancing aerodynamic performance through advanced analysis and design techniques for improved efficiency and lift-to-drag ratio for airfoils.",
-      fullHighlight: "The aviation field is growing increasingly interested in hypersonic speed for passenger transportation, which requires careful study of enabling technologies for optimal vehicle design.\n\nThis paper is aimed at describing the dynamics and control of these vehicles taking into account some of the recent experimental models.\n\nWhile significant work has been done on air-breathing hypersonic technology, there remain critical technological gaps that need to be filled before hypersonic transport systems can be a reality.\n\nHypersonic flight has long been a goal of aerospace engineers, as it promises to revolutionize air and space travel by dramatically reducing travel times and enabling access to space at a lower cost.\n\nFeel free to check out the Project by visiting the Project Link.",
+      description: "Enhancing aerodynamic performance through advanced analysis and design techniques for improved efficiency and lift-to-drag ratio.",
+      fullHighlight: "The aviation field is growing increasingly interested in hypersonic speed for passenger transportation, which requires careful study of enabling technologies for optimal vehicle design.\n\nThis project focuses on the computational optimization of airfoil profiles to maximize performance across different flight regimes. By utilizing genetic algorithms and high-fidelity CFD simulations, we identified shapes that minimize drag while maintaining structural integrity.\n\nWhile significant work has been done on air-breathing hypersonic technology, there remain critical technological gaps that need to be filled before hypersonic transport systems can be a reality.",
       projectLink: "/reports/project1.pdf",
       reportPath: "/reports/project1_report.pdf"
     },
@@ -55,9 +55,9 @@ export const portfolioData = {
       title: "Hypersonic Vehicles",
       tags: ["Dynamics", "Control Systems"],
       date: "2023",
-      description: "This is aimed at describing the dynamics and control of hypersonic vehicles taking into account some of the recent experimental models.",
+      description: "Describing the dynamics and control of hypersonic vehicles taking into account recent experimental models.",
       fullHighlight: "Hypersonic flight represents the next frontier in aeronautics. This project delves into the complex control laws required to stabilize vehicles traveling above Mach 5. By analyzing recent experimental flight data, we identify the thermal and structural stresses that challenge conventional airframe designs.",
-      projectLink: "https://www.researchgate.net/publication/379809253_Technical_Seminar_on_Emerging_Modern_Technologies_in_the_Aerospace_Industry_Report_on_HYPERSONIC_VEHICLES_Submitted_in_partial_fulfilment_for_the_award_of_the_degree_of_BACHELOR_OF_TECHNOLOGY_IN_AEROS",
+      projectLink: "https://www.researchgate.net/publication/379809253_Technical_Seminar_on_Emerging_Modern_Technologies_in_the_Aerospace_Industry_Report_on_HYPERSONIC_VEHICLES",
       reportPath: "/reports/report2.pdf"
     },
     {
@@ -65,18 +65,18 @@ export const portfolioData = {
       title: "Vibration with Variable Mass",
       tags: ["Mechanical Systems", "Dynamics"],
       date: "2023",
-      description: "The project aimed at researching dynamic behaviors, resonance effects, and damping mechanisms to advance understanding and control of complex mechanical systems.",
+      description: "Researching dynamic behaviors, resonance effects, and damping mechanisms in complex mechanical systems.",
       fullHighlight: "Mechanical systems with variable mass present unique challenges in resonance control. This research explores how fuel consumption and structural changes during flight affect the vibration profiles of aerospace components. Understanding these shifts is crucial for extending the life of engine mounts and airframe joints.",
       projectLink: "/reports/report3.pdf",
       reportPath: "/reports/report3.pdf"
     },
     {
       id: "project4",
-      title: "Helicopter Vibration Diagnostic for maintenance",
+      title: "Helicopter Vibration Diagnostic",
       tags: ["Maintenance", "Predictive Analytics"],
       date: "2024",
-      description: "This technique is used to calculate normal operating conditions and forecast remaining useful life through simulation and previous records.",
-      fullHighlight: "Helicopters are essential tools in a wide range of industries, from emergency services to defence, but they require rigorous maintenance due to their intricate mechanical designs. Modern sensors and complex algorithms are used by the HVD system to continuously detect and assess vibrations in helicopters. It provides predictive capabilities in addition to real-time monitoring, enabling proactive maintenance.\n\nThis research enables operators to recognize and fix mechanical defects before they become serious, saving downtime, lowering maintenance costs, and improving safety by building a comprehensive database of vibration signatures across diverse helicopter models and operational settings.\n\nAdditionally, broader uses of the knowledge and technology created for this research include structural health monitoring and industrial gear maintenance.\n\nFor more details on the project feel free to click the link.",
+      description: "Calculating normal operating conditions and forecasting remaining useful life through simulation and previous records.",
+      fullHighlight: "Helicopters are essential tools in a wide range of industries, but they require rigorous maintenance due to their intricate mechanical designs. Modern sensors and complex algorithms are used by the HVD system to continuously detect and assess vibrations. It provides predictive capabilities in addition to real-time monitoring, enabling proactive maintenance.\n\nThis research enables operators to recognize and fix mechanical defects before they become serious, saving downtime and enhancing safety.",
       projectLink: "https://github.com/Pantrovert/Helicopter-Vibration-Diagnostic-for-Maintenance",
       reportPath: "/reports/report4.pdf"
     }

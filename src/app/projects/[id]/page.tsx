@@ -1,3 +1,4 @@
+
 import { portfolioData } from "@/lib/portfolio-data";
 import { Navbar } from "@/components/navbar";
 import { Button } from "@/components/ui/button";
@@ -13,9 +14,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-/**
- * MANDATORY for 'output: export': Tells Next.js which paths to pre-render.
- */
 export async function generateStaticParams() {
   return portfolioData.projectsList.map((project) => ({
     id: project.id,

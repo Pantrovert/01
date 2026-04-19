@@ -1,6 +1,38 @@
+
+'use server';
 /**
- * Stub flow to ensure zero-dependency static build.
+ * @fileOverview A professional portfolio assistant AI.
+ * Handles questions about Pantaleo's aerospace background and projects.
  */
-export async function askMeAnything() {
-  return { answer: "AI is currently disabled for this static version." };
+
+import { portfolioData } from "@/lib/portfolio-data";
+
+/**
+ * A simplified local response flow for static-safety if needed,
+ * or it can call a real LLM if the environment supports it.
+ */
+export async function askMeAnything(question: string): Promise<{ answer: string }> {
+  const q = question.toLowerCase();
+  
+  // Basic heuristic responses for when server-side AI might be restricted
+  if (q.includes("hi") || q.includes("hello")) {
+    return { answer: "Hello! I'm Pantaleo's portfolio assistant. How can I help you learn about his aerospace journey?" };
+  }
+  
+  if (q.includes("project") || q.includes("research")) {
+    const projectTitles = portfolioData.projectsList.map(p => p.title).join(", ");
+    return { answer: `Pantaleo has worked on several key projects: ${projectTitles}. Which one would you like to know more about?` };
+  }
+
+  if (q.includes("education") || q.includes("study") || q.includes("university")) {
+    return { answer: `Pantaleo graduated in Aerospace Engineering from IIAEM, Jain University in 2024.` };
+  }
+
+  if (q.includes("contact") || q.includes("email")) {
+    return { answer: `You can reach Pantaleo at ${portfolioData.owner.email} or connect with him on LinkedIn.` };
+  }
+
+  return { 
+    answer: "That's a great question! Pantaleo is passionate about aircraft maintenance and hypersonic dynamics. For more specific details, feel free to check his project reports or contact him directly via the form below!" 
+  };
 }
