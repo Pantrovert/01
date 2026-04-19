@@ -107,17 +107,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
                   className="object-cover"
                 />
               </div>
-              
-              <div className="grid grid-cols-2 gap-4">
-                <div className="p-6 bg-white border rounded-3xl shadow-sm">
-                  <p className="text-xs font-bold text-muted-foreground uppercase mb-2">Technique</p>
-                  <p className="font-headline font-bold text-primary">Advanced Analysis</p>
-                </div>
-                <div className="p-6 bg-white border rounded-3xl shadow-sm">
-                  <p className="text-xs font-bold text-muted-foreground uppercase mb-2">Scope</p>
-                  <p className="font-headline font-bold text-primary">Aeronautical Systems</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

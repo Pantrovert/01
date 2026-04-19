@@ -13,32 +13,6 @@ export const portfolioData = {
   professionalJourney: `As a fresh graduate, Pantaleo is eager to transition into the professional aeronautical sector. He is specifically focused on becoming an Aircraft Maintenance Engineer (AME), where he can apply his technical knowledge to ensure the safety and efficiency of aviation systems. He is committed to making a significant impact through rigorous technical standards and a passion for excellence in the field.`,
   skills: `Aeronautical Engineering, Aircraft Maintenance Principles, Space Sciences, Aerodynamics, Propulsion Systems, CAD/CAM, Aircraft Structures, Quality Control & Safety Standards.`,
   interests: `Space exploration, aerospace technology advancements, and lifelong learning in aeronautical maintenance.`,
-  projects: `1. Optimization of Airfoils: Enhancing aerodynamic performance through advanced analysis and design techniques for improved efficiency and lift-to-drag ratio. 
-2. Hypersonic Vehicles: Describing the dynamics and control of hypersonic vehicles taking into account recent experimental models.
-3. Vibration with Variable Mass: Researching dynamic behaviors, resonance effects, and damping mechanisms in complex mechanical systems.
-4. Helicopter Vibration Diagnostic for maintenance: A technique used to calculate normal operating conditions and forecast remaining useful life through simulation and previous records.`,
-  educationList: [
-    {
-      degree: "Aerospace Engineering Graduate",
-      institution: "International Institute of Aerospace Engineering and Management (IIAEM), Jain University",
-      period: "2024",
-      achievements: "Focused on space sciences and aircraft systems. Participated in technical workshops and research projects."
-    }
-  ],
-  experienceList: [
-    {
-      role: "Aspiring Aircraft Maintenance Engineer",
-      company: "Aeronautical Sector",
-      period: "Present",
-      description: "Developing a deep understanding of maintenance manuals, safety protocols, and aircraft inspection techniques."
-    },
-    {
-      role: "Aerospace Engineering Intern",
-      company: "IIAEM Research",
-      period: "2022 - 2024",
-      description: "Contributed to aerodynamic simulations and structural analysis for small-scale aircraft models."
-    }
-  ],
   projectsList: [
     {
       id: "project1",
@@ -46,7 +20,7 @@ export const portfolioData = {
       tags: ["Aerodynamics", "Efficiency"],
       date: "2022",
       description: "Enhancing aerodynamic performance through advanced analysis and design techniques for improved efficiency and lift-to-drag ratio.",
-      fullHighlight: "The aviation field is growing increasingly interested in hypersonic speed for passenger transportation, which requires careful study of enabling technologies for optimal vehicle design.\n\nThis project focuses on the computational optimization of airfoil profiles to maximize performance across different flight regimes. By utilizing genetic algorithms and high-fidelity CFD simulations, we identified shapes that minimize drag while maintaining structural integrity.\n\nWhile significant work has been done on air-breathing hypersonic technology, there remain critical technological gaps that need to be filled before hypersonic transport systems can be a reality.",
+      fullHighlight: "The aviation field is growing increasingly interested in hypersonic speed for passenger transportation, which requires careful study of enabling technologies for optimal vehicle design.\n\nThis project focuses on the computational optimization of airfoil profiles to maximize performance across different flight regimes. By utilizing genetic algorithms and high-fidelity CFD simulations, we identified shapes that minimize drag while maintaining structural integrity.",
       projectLink: "/reports/project1.pdf",
       reportPath: "/reports/project1_report.pdf"
     },
@@ -66,7 +40,7 @@ export const portfolioData = {
       tags: ["Mechanical Systems", "Dynamics"],
       date: "2023",
       description: "Researching dynamic behaviors, resonance effects, and damping mechanisms in complex mechanical systems.",
-      fullHighlight: "Mechanical systems with variable mass present unique challenges in resonance control. This research explores how fuel consumption and structural changes during flight affect the vibration profiles of aerospace components. Understanding these shifts is crucial for extending the life of engine mounts and airframe joints.",
+      fullHighlight: "Mechanical systems with variable mass present unique challenges in resonance control. This research explores how fuel consumption and structural changes during flight affect the vibration profiles of aerospace components.",
       projectLink: "/reports/report3.pdf",
       reportPath: "/reports/report3.pdf"
     },
@@ -76,27 +50,23 @@ export const portfolioData = {
       tags: ["Maintenance", "Predictive Analytics"],
       date: "2024",
       description: "Calculating normal operating conditions and forecasting remaining useful life through simulation and previous records.",
-      fullHighlight: "Helicopters are essential tools in a wide range of industries, but they require rigorous maintenance due to their intricate mechanical designs. Modern sensors and complex algorithms are used by the HVD system to continuously detect and assess vibrations. It provides predictive capabilities in addition to real-time monitoring, enabling proactive maintenance.\n\nThis research enables operators to recognize and fix mechanical defects before they become serious, saving downtime and enhancing safety.",
+      fullHighlight: "Helicopters are essential tools in a wide range of industries, but they require rigorous maintenance due to their intricate mechanical designs. Modern sensors and complex algorithms are used by the HVD system to continuously detect and assess vibrations.\n\nThis research enables operators to recognize and fix mechanical defects before they become serious, saving downtime and enhancing safety.",
       projectLink: "https://github.com/Pantrovert/Helicopter-Vibration-Diagnostic-for-Maintenance",
       reportPath: "/reports/report4.pdf"
     }
   ],
-  skillCategories: [
+  experienceList: [
     {
-      name: "Aerospace Core",
-      skills: ["Aerodynamics", "Propulsion", "Flight Mechanics", "Space Sciences"]
+      role: "Aspiring Aircraft Maintenance Engineer",
+      company: "Aeronautical Sector",
+      period: "Present",
+      description: "Developing a deep understanding of maintenance manuals, safety protocols, and aircraft inspection techniques."
     },
     {
-      name: "Maintenance & Systems",
-      skills: ["AME Principles", "Aircraft Structures", "Systems Analysis", "Quality Control"]
-    },
-    {
-      name: "Design & Tools",
-      skills: ["CAD/CAM", "MATLAB", "Technical Documentation", "Problem Solving"]
-    },
-    {
-      name: "Professional Focus",
-      skills: ["Aviation Safety", "Aeronautical Regulations", "Impact-Driven Engineering"]
+      role: "Aerospace Engineering Intern",
+      company: "IIAEM Research",
+      period: "2022 - 2024",
+      description: "Contributed to aerodynamic simulations and structural analysis for small-scale aircraft models."
     }
   ]
 };

@@ -7,14 +7,9 @@
 
 import { portfolioData } from "@/lib/portfolio-data";
 
-/**
- * A simplified local response flow for static-safety if needed,
- * or it can call a real LLM if the environment supports it.
- */
 export async function askMeAnything(question: string): Promise<{ answer: string }> {
   const q = question.toLowerCase();
   
-  // Basic heuristic responses for when server-side AI might be restricted
   if (q.includes("hi") || q.includes("hello")) {
     return { answer: "Hello! I'm Pantaleo's portfolio assistant. How can I help you learn about his aerospace journey?" };
   }
